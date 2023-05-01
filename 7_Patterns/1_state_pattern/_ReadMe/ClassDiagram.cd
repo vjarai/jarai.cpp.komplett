@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Telefon">
+    <Position X="0.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAABAAAAAAABAAAAAAAEAAAgABAAA=</HashCode>
+      <FileName>Telefon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telefonzustand">
+    <Position X="6.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAABACAAAAABAAAAAAAEAAAAABAAA=</HashCode>
+      <FileName>Telefonzustand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Verbunden">
+    <Position X="6.5" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAEAAAAAAAAAAAAAEAACAAAAAA=</HashCode>
+      <FileName>Verbunden.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abgehoben">
+    <Position X="3.75" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAABAAAAAAAAAAAAAQIAA=</HashCode>
+      <FileName>Abgehoben.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aufgelegt">
+    <Position X="9.25" Y="3.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAABAAA=</HashCode>
+      <FileName>Aufgelegt.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

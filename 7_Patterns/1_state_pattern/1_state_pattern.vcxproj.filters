@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Abgehoben.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Aufgelegt.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Telefon.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Telefonzustand.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Verbunden.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Abgehoben.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Aufgelegt.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Telefon.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Telefonzustand.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Verbunden.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_ReadMe\ClassDiagram.cd" />
+    <None Include="_ReadMe\State_Pattern.ump" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header-Dateien">
+      <UniqueIdentifier>{1ab1e2f7-660d-4bdb-8273-d81342544dbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quellcodedateien">
+      <UniqueIdentifier>{52b6cba4-74f5-4376-966b-6bfac7c35aa2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="_ReadMe\StateDiagram.jpg" />
+    <Image Include="_ReadMe\ClassDiagram.jpg" />
+  </ItemGroup>
+</Project>

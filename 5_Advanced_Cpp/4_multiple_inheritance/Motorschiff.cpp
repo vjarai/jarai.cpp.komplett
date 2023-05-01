@@ -1,0 +1,20 @@
+// Motorschiff.cpp: Implementierung der Klasse Motorschiff.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "Motorschiff.h"
+
+//////////////////////////////////////////////////////////////////////
+// Konstruktion/Destruktion
+//////////////////////////////////////////////////////////////////////
+
+Motorschiff::Motorschiff(const string Bezeichnung, const int PS)
+	: Schiff(Bezeichnung)
+	  , ps_(PS)
+{
+	cout << "\t mit " << PS << " ps_" << endl;
+}
+
+Motorschiff::~Motorschiff()
+{
+}
