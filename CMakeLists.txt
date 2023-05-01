@@ -12,4 +12,3 @@ add_subdirectory ("3_Objektorientierung")
 add_subdirectory ("4_Templates")
 add_subdirectory ("7_Patterns")
 
-grundlagen
