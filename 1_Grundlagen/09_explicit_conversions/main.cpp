@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std;
+using namespace std;  // erspart std:: => gilt aber als schlechter Stil!
 
 /*
  * Aufgabe: Explizite Typkonversion (cast)
@@ -8,11 +8,11 @@ using namespace std;
 int main()
 {
 	int anzahl_kuchen;
-	cout << "Wieviel Kuchen haben Sie? : ";
+	cout << "Wieviel Kuchen haben Sie? : " << endl;
 	cin >> anzahl_kuchen;
 
 	int anzahl_personen;
-	cout << endl << "Wieviel Personen kommen zur Party? : ";
+	cout << "Wieviel Personen kommen zur Party? : " << endl;
 	cin >> anzahl_personen;
 
 	// Bad smell: veralteter c-style cast
@@ -21,6 +21,6 @@ int main()
 	// explicite Typkonversion, da sonst integer division
 	const double kuchen_pro_person = static_cast<double>(anzahl_kuchen) / anzahl_personen;
 
-	cout << "Es gibt : " << kuchen_pro_person << " Kuchen fuer jeden Gast." << endl;
+	cout << "Es gibt : " << kuchen_pro_person << " Kuchen fuer jeden " << anzahl_personen << " Gaeste." << endl;
 
 }

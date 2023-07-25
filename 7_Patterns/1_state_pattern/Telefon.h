@@ -15,6 +15,6 @@ public:
 	 void anruf_annehmen();
 
 private:
-	Telefonzustand* aktuellerZustand = new Aufgelegt();
+	std::unique_ptr<Telefonzustand> aktuellerZustand = std::make_unique<Aufgelegt>();
 };
 

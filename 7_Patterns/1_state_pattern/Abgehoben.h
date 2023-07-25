@@ -7,7 +7,7 @@ public:
 	Abgehoben();
 	virtual ~Abgehoben();
 
-	Telefonzustand* auflegen() override;
-	Telefonzustand* waehlen() override;
+	std::unique_ptr<Telefonzustand> auflegen() override;
+	std::unique_ptr<Telefonzustand> waehlen() override;
 };
 

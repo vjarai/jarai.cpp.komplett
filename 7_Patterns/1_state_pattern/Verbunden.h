@@ -5,7 +5,7 @@ class Verbunden : public Telefonzustand
 public:
 	Verbunden();
 	virtual ~Verbunden();
-	Telefonzustand* auflegen() override;
-	Telefonzustand* sprechen() override;
+	std::unique_ptr<Telefonzustand> auflegen() override;
+	std::unique_ptr<Telefonzustand> sprechen() override;
 };
 

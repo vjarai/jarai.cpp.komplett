@@ -8,21 +8,22 @@
 
 Abgehoben::Abgehoben()
 {
-	std::cout << "Zustand Abgehoben erstellt." << std::endl;
+	std::cout << "Konstruktor Abgehoben." << std::endl;
 }
 
 Abgehoben::~Abgehoben()
 {
+	std::cout << "Destruktor Abgehoben." << std::endl;
 }
 
-Telefonzustand* Abgehoben::auflegen()
+std::unique_ptr<Telefonzustand> Abgehoben::auflegen()
 {
 	std::cout << "Hoerer wird aufgelegt." << std::endl;
-	return new Aufgelegt();
+	return std::make_unique< Aufgelegt>();
 }
 
-Telefonzustand* Abgehoben::waehlen()
+std::unique_ptr<Telefonzustand> Abgehoben::waehlen()
 {
 	std::cout << "Nummer wird gewaehlt." << std::endl;
-	return new Verbunden();
+	return std::make_unique < Verbunden>();
 }

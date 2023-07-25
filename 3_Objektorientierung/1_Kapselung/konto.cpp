@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+// Initialisierung der Klassenvariable
 int Konto::anzahl_konten = 0;
 
 Konto::Konto(const string& kontoinhaber)

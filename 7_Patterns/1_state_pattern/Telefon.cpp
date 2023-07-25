@@ -9,40 +9,25 @@ Telefon::Telefon()
 
 void Telefon::abheben()
 {
-	auto neuerZustand = aktuellerZustand->abheben();
-
-	delete aktuellerZustand;
-	aktuellerZustand = neuerZustand;
+	aktuellerZustand = aktuellerZustand->abheben();
 }
 
 void Telefon::auflegen()
 {
-	auto neuerZustand = aktuellerZustand->auflegen();
-
-	delete aktuellerZustand;
-	aktuellerZustand = neuerZustand;
+	aktuellerZustand = aktuellerZustand->auflegen();
 }
 
 void Telefon::waehlen()
 {
-	auto neuerZustand = aktuellerZustand->waehlen();
-
-	delete aktuellerZustand;
-	aktuellerZustand = neuerZustand;
+	aktuellerZustand = aktuellerZustand->waehlen();
 }
 
 void Telefon::sprechen()
 {
-	auto neuerZustand = aktuellerZustand->sprechen();
-
-	delete aktuellerZustand;
-	aktuellerZustand = neuerZustand;
+	aktuellerZustand = aktuellerZustand->sprechen();
 }
 
 void Telefon::anruf_annehmen()
 {
-	auto neuerZustand = aktuellerZustand->anruf_annehmen();
-
-	delete aktuellerZustand;
-	aktuellerZustand = neuerZustand;
+	aktuellerZustand = aktuellerZustand->anruf_annehmen();
 }

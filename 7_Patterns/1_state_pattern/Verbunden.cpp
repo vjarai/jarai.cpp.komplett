@@ -7,21 +7,22 @@
 
 Verbunden::Verbunden()
 {
-	std::cout << "Zustand Verbunden erstellt." << std::endl;
+	std::cout << "Konstruktor Verbunden." << std::endl;
 }
 
 Verbunden::~Verbunden()
 {
+	std::cout << "Destruktor Verbunden." << std::endl;
 }
 
-Telefonzustand* Verbunden::auflegen()
+std::unique_ptr<Telefonzustand> Verbunden::auflegen()
 {
 	std::cout << "Hoerer wird aufgelegt." << std::endl;
-	return new Aufgelegt();
+	return std::make_unique < Aufgelegt>();
 }
 
-Telefonzustand* Verbunden::sprechen()
+std::unique_ptr<Telefonzustand> Verbunden::sprechen()
 {
 	std::cout << "Es wird gesprochen." << std::endl;
-	return new Verbunden();
+	return std::make_unique < Verbunden>();
 }

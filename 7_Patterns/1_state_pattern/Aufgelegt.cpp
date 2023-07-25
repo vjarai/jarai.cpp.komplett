@@ -7,21 +7,22 @@
 
 Aufgelegt::Aufgelegt()
 {
-	std::cout << "Zustand Aufgelegt erstellt." << std::endl;
+	std::cout << "Konstruktor Aufgelegt." << std::endl;
 }
 
 Aufgelegt::~Aufgelegt()
 {
+	std::cout << "Destruktor Aufgelegt." << std::endl;
 }
 
-Telefonzustand* Aufgelegt::abheben() 
+std::unique_ptr<Telefonzustand> Aufgelegt::abheben() 
 {
 	std::cout << "Hoerer wird abgehoben." << std::endl;
-	return new Abgehoben();
+	return std::make_unique < Abgehoben>();
 }
 
-Telefonzustand* Aufgelegt::anruf_annehmen()
+std::unique_ptr<Telefonzustand> Aufgelegt::anruf_annehmen()
 {
 	std::cout << "Klingeling! Anruf wird angenommen." << std::endl;
-	return new Verbunden();
+	return std::make_unique < Verbunden>();
 }
