@@ -23,3 +23,8 @@ void Rad::aufpumpen()
 	cout << " bar aufgepumpt!";
 	cout << endl;
 }
+
+void Rad::anzeigen()
+{
+	cout << "Luftdruck " << luftdruck_ << endl;
+}

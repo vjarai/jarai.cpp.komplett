@@ -41,6 +41,9 @@ void Auto::anzeigen()
 	cout << "Tankinhalt :" << tankinhalt_ << endl;
 	cout << "Tachostand :" << tachostand_ << endl;
 	motor_.anzeigen();
+
+	for (int i = 0; i < 4; i++)
+		raeder_[i].anzeigen();
 }
 
 
