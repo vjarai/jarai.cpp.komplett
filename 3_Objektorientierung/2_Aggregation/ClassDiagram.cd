@@ -21,10 +21,17 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Rad">
-    <Position X="4.25" Y="3" Width="1.75" />
+    <Position X="6.5" Y="1.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAABCAAAEAQAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>Rad.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cabrio">
+    <Position X="0.5" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Cabrio.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
