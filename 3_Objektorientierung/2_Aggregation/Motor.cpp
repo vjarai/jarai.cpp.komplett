@@ -36,6 +36,11 @@ void Motor::anlassen()
 	}
 }
 
+void Motor::anzeigen()
+{
+	cout << "Motor Drehzahl:" << drehzahl_ << endl;
+}
+
 void Motor::abstellen()
 {
 	drehzahl_ = 0;

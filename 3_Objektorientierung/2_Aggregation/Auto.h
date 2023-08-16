@@ -10,8 +10,9 @@
 class Auto
 {
 public:
-	void tanken();
-	void fahren();
+	void tanken(double liter);
+	void fahren(double strecke);
+	void anzeigen();
 
 	Auto();
 	virtual ~Auto();

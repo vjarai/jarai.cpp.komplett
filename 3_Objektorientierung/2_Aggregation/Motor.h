@@ -6,6 +6,7 @@ class Motor
 public:
 	void abstellen();
 	void anlassen();
+	void anzeigen();
 	Motor();
 	virtual ~Motor();
 

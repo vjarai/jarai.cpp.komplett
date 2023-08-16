@@ -24,20 +24,29 @@ Auto::~Auto()
 }
 
 
-void Auto::fahren()
+void Auto::fahren(double strecke)
 {
-	tachostand_ += 100;
-	tankinhalt_ -= 10;
-
 	motor_.anlassen();
 
-	cout << "Auto ist 100 KM gefahren!" << endl;
+	tachostand_ += strecke;
+	tankinhalt_ -= strecke / 10;
+
+	cout << "Auto ist " << strecke << " KM gefahren!" << endl;
+
+	motor_.abstellen();
+}
+
+void Auto::anzeigen()
+{
+	cout << "Tankinhalt :" << tankinhalt_ << endl;
+	cout << "Tachostand :" << tachostand_ << endl;
+	motor_.anzeigen();
 }
 
 
-void Auto::tanken()
+void Auto::tanken(double liter)
 {
-	tankinhalt_ += 20;
+	tankinhalt_ += liter;
 	cout << "Tankinhalt des Autos wurde auf ";
 	cout << tankinhalt_;
 	cout << " Liter erhoeht!";

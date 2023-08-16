@@ -133,7 +133,7 @@
     <ClInclude Include="Rad.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="_ReadMe\ClassDiagram.cd" />
+    <None Include="ClassDiagram.cd" />
     <None Include="_ReadMe\ClassDiagram.ump" />
   </ItemGroup>
   <ItemGroup>
