@@ -4,17 +4,17 @@
 template <typename T> class Schiffscontainer
 {
 private:
-    T Inhalt;
+    T inhalt_;
 
 public:
     void beladen(T neuerInahlt)
     {
-        Inhalt = neuerInahlt;
+        inhalt_ = neuerInahlt;
     }
 
     T entladen()
     {
-        return Inhalt;
+        return inhalt_;
     }
 
 };

@@ -7,15 +7,15 @@ class IndexCheckingArray
 {
 private:
 	T* ptr_internal_array_;
-	int count_;
+	int size_;
 
 public:
-	IndexCheckingArray(int count)
+	IndexCheckingArray(int size)
 	{
-		ptr_internal_array_ = new T[count];	
-		count_ = count;
+		ptr_internal_array_ = new T[size];	
+		size_ = size;
 
-		for (int i = 0; i < count_; i++) // internes Array vorbelegen
+		for (int i = 0; i < size_; i++) // internes Array vorbelegen
 			ptr_internal_array_[i] = 0;
 
 		std::cout << "Array created..." << std::endl;
@@ -29,7 +29,7 @@ public:
 
 	T& operator[](int index)
 	{
-		if (index >= count_ || index < 0)
+		if (index >= size_ || index < 0)
 		{
 			throw std::exception("Index ausserhalb des gueltigen Bereichs");
 		}
@@ -37,7 +37,7 @@ public:
 		return ptr_internal_array_[index];
 	}
 
-	int count() const { return count_; }
+	int count() const { return size_; }
 
 	// Automatisch generierte Memberfunktionen sicherheitshalber verbieten
 	IndexCheckingArray(const IndexCheckingArray&) = delete;
@@ -45,7 +45,7 @@ public:
 
 	// Iteratoren begin() und end() ermoeglichen for_each schleife
 	T* begin() const { return ptr_internal_array_; }
-	T* end() const { return ptr_internal_array_ + count_; }
+	T* end() const { return ptr_internal_array_ + size_; }
 };
 
 
