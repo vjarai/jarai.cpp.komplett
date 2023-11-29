@@ -36,7 +36,7 @@ void Auto::fahren(double strecke)
 	motor_.abstellen();
 }
 
-void Auto::anzeigen()
+ void Auto::anzeigen()
 {
 	cout << "Tankinhalt :" << tankinhalt_ << endl;
 	cout << "Tachostand :" << tachostand_ << endl;

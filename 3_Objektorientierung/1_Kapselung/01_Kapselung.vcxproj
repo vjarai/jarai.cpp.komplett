@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>1_encapsulation</ProjectName>
+    <ProjectName>2_encapsulation</ProjectName>
     <ProjectGuid>{EC20F909-81B1-4AB4-A3AD-BF7B4CC296A4}</ProjectGuid>
     <RootNamespace>konto</RootNamespace>
   </PropertyGroup>

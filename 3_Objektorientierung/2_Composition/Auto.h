@@ -12,7 +12,7 @@ class Auto
 public:
 	void tanken(double liter);
 	void fahren(double strecke);
-	void anzeigen();
+	virtual void anzeigen();
 
 	Auto();
 	virtual ~Auto();

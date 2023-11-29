@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>2_aggregation</ProjectName>
+    <ProjectName>1_composition</ProjectName>
     <ProjectGuid>{9E70C4B5-16A3-4055-AEFC-8E640A742218}</ProjectGuid>
     <RootNamespace>Autos2</RootNamespace>
   </PropertyGroup>
