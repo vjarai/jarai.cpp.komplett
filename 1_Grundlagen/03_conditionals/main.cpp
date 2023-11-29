@@ -6,15 +6,8 @@ using namespace std;
  */
 
 
-int main()
+void note_anzeigen_mit_if(int note)
 {
-	cout << "Bitte geben Sie eine Note ein: ";
-	int note;
-	cin >> note;
-
-	cout << endl;
-
-	// Variante 1: Mehrwegeverzweigung mit if... else if
 	if (note == 1)
 		cout << "Sehr gut" << endl;
 	else if (note == 2)
@@ -29,8 +22,10 @@ int main()
 		cout << "Ungenuegend" << endl;
 	else
 		cout << "Die Eingabe ist ungueltig" << endl;
+}
 
-	// Variante 2: Mehrwegeverzweigung mit switch
+void note_anzeigen_mit_switch(int note)
+{
 	switch (note)
 	{
 	case 1: cout << "Sehr gut" << endl;
@@ -54,12 +49,29 @@ int main()
 	default: cout << "Die Eingabe ist ungueltig" << endl;
 		break;
 	}
+}
 
-	// Variante 3: Eleganteste Loesung mit einem string Array 
+void note_anzeigen_mit_array(int note)
+{
 	string notenBezeichnungen[] = { "Sehr gut", "Gut",  "Befriedigend", "Ausreichend", "Mangelhaft", "Ungenuegend" };
 
 	if (note >= 1 && note <= 6)
 		cout << notenBezeichnungen[note - 1] << endl;
 	else
 		cout << "Die Eingabe ist ungueltig" << endl;
+}
+
+int main()
+{
+	cout << "Bitte geben Sie eine Note ein: ";
+	int note;
+	cin >> note;
+
+	cout << endl;
+
+	note_anzeigen_mit_if(note);
+
+	note_anzeigen_mit_switch(note);
+
+	note_anzeigen_mit_array(note);
 }

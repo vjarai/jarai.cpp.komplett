@@ -28,7 +28,7 @@ struct Point3d
 	}
 
 	//  structs können auch Member Funktionen haben
-	void show()
+	void show() const
 	{
 		std::cout << x << ", " << y << ", " << z << std::endl;
 	}

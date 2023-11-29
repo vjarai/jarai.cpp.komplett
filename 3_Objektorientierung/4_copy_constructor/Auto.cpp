@@ -47,7 +47,7 @@ Auto& Auto::operator=(const Auto& original)
 	return *this;
 }
 
-void Auto::show()
+void Auto::show() const
 {
 	std::cout << marke_ << " PS: " << pMotor_->ps_ << std::endl;
 }

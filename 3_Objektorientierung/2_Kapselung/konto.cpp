@@ -3,12 +3,12 @@
 using namespace std;
 
 // Initialisierung der Klassenvariable
-int Konto::anzahl_konten = 0;
+int Konto::anzahl_konten_ = 0;
 
 Konto::Konto(const string& kontoinhaber)
 	: kontoinhaber_(kontoinhaber)
 {
-	iban_ = ++anzahl_konten;
+	iban_ = ++anzahl_konten_;
 	kontostand_ = 0.00;
 
 	cout << endl << "Konto erstellt: " << endl;
@@ -44,7 +44,7 @@ void Konto::abheben(double betrag, int pin)
 	cout <<  betrag << " EUR abgehoben von " << kontoinhaber_ << endl;
 }
 
-void Konto::anzeigen()
+void Konto::anzeigen() const
 {
 	cout << "-------------- " << endl;
 	cout << "Kontoinhaber : " << kontoinhaber_ << endl;

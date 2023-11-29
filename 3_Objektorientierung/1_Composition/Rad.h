@@ -6,7 +6,7 @@ class Rad
 {
 public:
 	void aufpumpen();
-	void anzeigen();
+	void anzeigen() const;
 	Rad();
 	virtual ~Rad();
 

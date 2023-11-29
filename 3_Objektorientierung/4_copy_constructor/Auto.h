@@ -12,7 +12,7 @@ public:
 
 	virtual ~Auto();
 
-	void show();
+	void show() const;
 	Auto& operator=(const Auto& original);
 
 	std::string marke_;
