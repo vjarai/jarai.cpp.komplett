@@ -21,6 +21,9 @@ void pointer_example()
 
 	// Schritt 5: Pointer benutzen (wie Schritt 3)
 	*p1 = 23;           // y = 23
+
+	// Schritt 6: (optional)
+	p1 = nullptr;       // Pointer zeigt nirgendwo hin
 }
 
 
@@ -42,8 +45,8 @@ void reference_example()
 	// Es gibt keine null Referenz 
 	// rx = nullptr;   // Geht nicht
 
-	// Fazit => Referenzen sind die "besseren" Pointer
-	// Es gibt aber Fälle, wo Pointer erforderlich sind (nullptr, verbiegen)
+	// Fazit => Referenzen sind die "besseren" (einfacheren) Pointer
+	// Es gibt aber Fälle, wo Pointer erforderlich sind (nullptr, verbiegen, new/delete)
 }
 
 int main()
