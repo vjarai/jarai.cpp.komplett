@@ -12,4 +12,4 @@ add_subdirectory ("3_parameter_passing")
 add_subdirectory ("4_arrays_and_pointers")
 add_subdirectory ("5_new_and_delete")
 add_subdirectory ("6_function_pointer")
-
+add_subdirectory ("7_pointer_vs_reference")

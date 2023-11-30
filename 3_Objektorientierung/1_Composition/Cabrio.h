@@ -1,5 +1,6 @@
 #pragma once
 #include "Auto.h"
+
 class Cabrio :
 	public Auto
 {
