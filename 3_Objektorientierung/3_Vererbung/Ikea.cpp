@@ -21,7 +21,7 @@ Ikea::~Ikea()
 }
 
 
-Moebel* Ikea::verkaufen() 
+Moebel* Ikea::verkaufen()
 {
 	cout << endl << "Was wollen Sie kaufen?" << endl;
 	cout << "1. Tisch" << endl;
@@ -30,7 +30,7 @@ Moebel* Ikea::verkaufen()
 	int eingabe;
 	cin >> eingabe;
 
-	Moebel* pMoebel; 
+	Moebel* pMoebel;
 
 	if (eingabe == 1)
 		pMoebel = new Tisch();
@@ -44,6 +44,3 @@ Moebel* Ikea::verkaufen()
 
 	return pMoebel;
 }
-
-
-

@@ -1,7 +1,7 @@
 #include <iostream>
-using namespace std;
-
 #include "Schrank.h"
+
+using namespace std;
 
 
 Schrank::Schrank()
@@ -21,10 +21,6 @@ void Schrank::benutzen()
 	cout << "Der Schrank " << bezeichnung_ << " wird benutzt!" << endl;
 }
 
-void Schrank::oeffnen()
-{
-	cout << "Der Schrank " << bezeichnung_ << " wird geoeffnet!" << endl;
-}
 
 void Schrank::montieren()
 {

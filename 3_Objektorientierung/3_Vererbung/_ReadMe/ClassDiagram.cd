@@ -1,4 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Ikea">
+    <Position X="2.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAIAAAAAIAAEAAAAAAAABAA=</HashCode>
+      <FileName>Ikea.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Moebel">
+    <Position X="6" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAMAAAACAAAAAAAAAAAQAAAAAAAAAAERAAAAI=</HashCode>
+      <FileName>Moebel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Schrank">
+    <Position X="5.75" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAEAAAAAAAAAQAAAAAAAAQAAAAI=</HashCode>
+      <FileName>Schrank.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tisch">
+    <Position X="8" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAEAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Tisch.h</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
