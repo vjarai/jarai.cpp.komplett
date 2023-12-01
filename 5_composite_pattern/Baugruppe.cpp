@@ -24,7 +24,7 @@ double Baugruppe::getPreis()
 	double preis = 0.0;
 
 	for (auto bauteil : bauteile_)
-	preis += 	bauteil->getPreis();
+		preis += bauteil->getPreis();
 
 	return preis;
 }

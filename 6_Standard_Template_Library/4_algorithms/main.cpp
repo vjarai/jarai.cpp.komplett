@@ -20,15 +20,15 @@ int main()
 	auto average = static_cast<double>( std::accumulate(daten.begin(), daten.end(), 0)) / daten.size();
 	std::cout << "Mittelwert betraegt: " << average << std::endl;
 
-	auto maximum = *std::max_element(daten.begin(), daten.end());
-	std::cout << "Maximum betraegt: " << maximum << std::endl;
+	auto ptr_maximum = std::max_element(daten.begin(), daten.end());
+	std::cout << "Maximum betraegt: " << *ptr_maximum << std::endl;
 
 	// Verwendung eines Predicate als Kriterium
 	auto anzahl_ungerade = count_if(daten.begin(), daten.end(), IsOdd);
 	std::cout << "Anzahl ungerade betraegt: " << anzahl_ungerade << std::endl;
 
-	auto first_odd = std::find_if(daten.begin(), daten.end(), IsOdd);
-	std::cout << "Erste ungerade: " << *first_odd << std::endl;
+	auto ptr_first_odd = std::find_if(daten.begin(), daten.end(), IsOdd);
+	std::cout << "Erste ungerade: " << *ptr_first_odd << std::endl;
 
 	// Anwendung einer binary function auf den ganzen container
 	auto product1 = std::accumulate(daten.begin(), daten.end(), 1, multiply);

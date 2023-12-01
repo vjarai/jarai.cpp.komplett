@@ -27,7 +27,7 @@
     <ProjectGuid>{7E5CBA77-76AB-47D8-BF27-8D39675D18ED}</ProjectGuid>
     <RootNamespace>My01simplepointer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>09_static_cast</ProjectName>
+    <ProjectName>09_casting</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
