@@ -1,0 +1,18 @@
+@startuml
+class Auto {
+    #motor: Motor
+    #rad: Rad[]
+}
+class Cabrio {
+
+}
+class Motor {
+
+}
+class Rad {
+
+}
+Auto <|-- Cabrio
+Auto o-- Motor
+Auto o-- Rad
+@enduml
