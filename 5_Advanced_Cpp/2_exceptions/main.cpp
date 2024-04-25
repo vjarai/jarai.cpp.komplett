@@ -1,14 +1,13 @@
 #include <iostream>
 
 #include "PartyException.h"
-using namespace std;
 
 
 int eingabe_kuchen()
 {
 	int anzahl_kuchen;
-	cout << "Wieviel Kuchen haben Sie? : ";
-	cin >> anzahl_kuchen;
+	std::cout << "Wieviel Kuchen haben Sie? : ";
+	std::cin >> anzahl_kuchen;
 
 	// nicht ignorierbarer fehler => exception auslösen
 	if (anzahl_kuchen <= 0)
@@ -22,12 +21,12 @@ int eingabe_kuchen()
 int eingabe_personen()
 {
 	int anzahl_personen;
-	cout << endl << "Wieviel Personen kommen zur Party? : ";
-	cin >> anzahl_personen;
+	std::cout << std::endl << "Wieviel Personen kommen zur Party? : ";
+	std::cin >> anzahl_personen;
 
 	// nicht ignorierbarer fehler => exception auslösen
 	if (anzahl_personen <= 0)
-		throw exception("Party faellt aus wegen fehlender Gaeste.");
+		throw std::exception("Party faellt aus wegen fehlender Gaeste.");
 
 	return anzahl_personen;
 }
@@ -44,18 +43,18 @@ int main()
 
 		const double kuchen_pro_person = static_cast<double>(anzahl_kuchen) / anzahl_personen;
 
-		cout << "Es gibt : " << kuchen_pro_person << " Kuchen fuer jeden Gast." << endl;
+		std::cout << "Es gibt : " << kuchen_pro_person << " Kuchen fuer jeden Gast." << std::endl;
 
 	}
 	catch (PartyException& e) // Best practice: Catch by Reference!
 	{
 		// Problem: Keine Kuchen...
-		cout << e.what() << endl;
+		std::cout << e.what() << std::endl;
 	}
-	catch (exception& e)	// Reihenfolge der catch Blöcke ist wichtig!
+	catch (std::exception& e)	// Reihenfolge der catch Blöcke ist wichtig!
 	{
 		// Problem: Keine Gäste
-		cout << e.what() << endl;
+		std::cout << e.what() << std::endl;
 	}
 	catch(...)				// catch all
 	{

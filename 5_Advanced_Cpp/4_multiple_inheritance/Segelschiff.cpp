@@ -1,12 +1,11 @@
 #include "Segelschiff.h"
 
-Segelschiff::Segelschiff(const string Bezeichnung, const int Segelflaeche)
+Segelschiff::Segelschiff(const std::string& Bezeichnung, const int Segelflaeche)
 	: Schiff(Bezeichnung)
 	  , Segelflaeche(Segelflaeche)
 {
-	cout << "\t mit " << Segelflaeche << " qm Segelflaeche" << endl;
+	std::cout << "\t mit " << Segelflaeche << " qm Segelflaeche" << std::endl;
 }
 
 Segelschiff::~Segelschiff()
-{
-}
+= default;

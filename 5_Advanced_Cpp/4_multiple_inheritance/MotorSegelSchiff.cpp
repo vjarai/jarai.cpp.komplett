@@ -1,6 +1,6 @@
 #include "MotorSegelSchiff.h"
 
-MotorSegelSchiff::MotorSegelSchiff(const string Bezeichnung, const int Segelflaeche, const int PS)
+MotorSegelSchiff::MotorSegelSchiff(const std::string& Bezeichnung, const int Segelflaeche, const int PS)
 	: Schiff(Bezeichnung)
 	  , Motorschiff(Bezeichnung, PS)
 	  , Segelschiff(Bezeichnung, Segelflaeche)
@@ -8,5 +8,4 @@ MotorSegelSchiff::MotorSegelSchiff(const string Bezeichnung, const int Segelflae
 }
 
 MotorSegelSchiff::~MotorSegelSchiff()
-{
-}
+= default;

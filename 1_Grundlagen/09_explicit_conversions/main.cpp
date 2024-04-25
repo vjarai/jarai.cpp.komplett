@@ -74,10 +74,6 @@ void reinterpret_cast_example()
 	int* ptr4 = reinterpret_cast<int*>(&ref);
 
 	// reinterpret_cast erlaubt auch Typkonversionen, die normalerweise erlaubt sind
-	// z.B. von int& nach int
-	int i3 = reinterpret_cast<int>(ref);
-
-	// reinterpret_cast erlaubt auch Typkonversionen, die normalerweise erlaubt sind
 	// z.B. von int nach int&
 	int& ref2 = reinterpret_cast<int&>(i);
 

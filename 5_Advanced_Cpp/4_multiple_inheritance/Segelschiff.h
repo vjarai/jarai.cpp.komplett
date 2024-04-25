@@ -7,13 +7,13 @@ class Segelschiff : virtual public Schiff
 	//virtual: Die Basisklasse kommt in Erben dieser Klasse und diese Klasse kommt ohne Basisklasse in den Erben. So wird Kollison bei Mehrfachvererbung verhindert 
 {
 public:
-	Segelschiff(string Bezeichnung, int Segelflaeche);
+	Segelschiff(const std::string& Bezeichnung, int Segelflaeche);
 	~Segelschiff() override;
-	virtual void segeln(void) { cout << "\tFfffft ..." << endl; }
+	virtual void segeln(void) { std::cout << "\tFfffft ..." << std::endl; }
 
 	void schwimmen(void) override
 	{
-		cout << "\tSegel:";
+		std::cout << "\tSegel:";
 		Schiff::schwimmen();
 	}
 

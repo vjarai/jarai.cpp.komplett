@@ -8,13 +8,13 @@ class Motorschiff : virtual public Schiff
 	// So wird Kollison bei Mehrfachvererbung verhindert 
 {
 public:
-	Motorschiff(string Bezeichnung, int PS);
+	Motorschiff(const std::string& Bezeichnung, int PS);
 	~Motorschiff() override;
-	virtual void tuckern() { cout << "\tTuck Tuck" << endl; }
+	virtual void tuckern() { std::cout << "\tTuck Tuck" << std::endl; }
 
 	void schwimmen() override
 	{
-		cout << "\tMotor:";
+		std::cout << "\tMotor:";
 		Schiff::schwimmen();
 	}
 

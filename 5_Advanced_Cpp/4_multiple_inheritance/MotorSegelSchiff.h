@@ -10,7 +10,7 @@ class MotorSegelSchiff :
 	public Segelschiff
 {
 public:
-	MotorSegelSchiff(string Bezeichnung, int Segelflaeche, int PS);
+	MotorSegelSchiff(const std::string& Bezeichnung, int Segelflaeche, int PS);
 	~MotorSegelSchiff() override;
 	void schwimmen() override { Schiff::schwimmen(); } //Bei Kollision muss aufgelöst werden
 };

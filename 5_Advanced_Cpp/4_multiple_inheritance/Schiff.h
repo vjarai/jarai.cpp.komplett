@@ -2,19 +2,18 @@
 #define SCHIFF_H
 
 #include <iostream>
-using namespace std;
 
 
 class Schiff
 {
 public:
-	Schiff(string Bezeichnung);
+	Schiff(const std::string& Bezeichnung);
 	virtual ~Schiff() =0;
-	virtual void schwimmen(void) { cout << "Ein Schiff schwimmt!" << endl; }
+	virtual void schwimmen(void) { std::cout << "Ein Schiff schwimmt!" << std::endl; }
 
 private:
 	int Tonage;
-	const string Bezeichnung;
+	const std::string Bezeichnung;
 };
 
 #endif // SCHIFF_H

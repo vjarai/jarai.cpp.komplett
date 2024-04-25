@@ -1,13 +1,12 @@
 #include "Schiff.h"
 
 
-Schiff::Schiff(const string Bezeichnung)
+Schiff::Schiff(const std::string& Bezeichnung)
 	: Tonage(40)
 	  , Bezeichnung(Bezeichnung)
 {
-	cout << "Schiff " << Bezeichnung << endl;
+	std::cout << "Schiff " << Bezeichnung << std::endl;
 }
 
 Schiff::~Schiff()
-{
-}
+= default;
