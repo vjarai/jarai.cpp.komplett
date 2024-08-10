@@ -137,6 +137,7 @@
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
     <None Include="_ReadMe\ClassDiagram.ump" />
+    <None Include="_ReadMe\ClassDiagramm.puml" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="_ReadMe\ClassDiagram.jpg" />

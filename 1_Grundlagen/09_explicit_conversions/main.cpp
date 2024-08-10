@@ -1,4 +1,5 @@
 #include <iostream>
+class Auto;
 using namespace std;
 
 /*
@@ -22,9 +23,6 @@ void static_cast_example()
 	int anzahl_kuchen = 1;
 	int anzahl_personen = 2;
 
-	// Bad smell: veralteter c-style cast
-	//const double kuchen_pro_person = ((double)anzahl_kuchen) / anzahl_personen;
-
 	// explicite Typkonversion, da sonst integer division
 	const double kuchen_pro_person = static_cast<double>(anzahl_kuchen) / anzahl_personen;
 
@@ -44,11 +42,7 @@ void const_cast_example()
 }
 
 
-void dynamic_cast_example()
-{
 
-
-}
 
 void reinterpret_cast_example()
 {
@@ -83,10 +77,39 @@ void reinterpret_cast_example()
 
 }
 
+
+class Kfz
+{
+	virtual void fahren() {}
+};
+
+class Pkw : public Kfz
+{
+public:
+	void einsteigen() { cout << "einsteigen()"; }
+};
+
+void dynamic_cast_example()
+{
+	Pkw pkw;
+	Kfz* ptr_kfz = &pkw;
+
+	// Prüft , ob pKfz ein Pkw ist
+	auto ptr_pkw = dynamic_cast <Pkw*>(ptr_kfz);
+
+	if (ptr_pkw == nullptr)
+	{
+		throw exception("Das Kfz ist kein Pkw!");
+	}
+
+	ptr_pkw->einsteigen();
+
+}
+
 int main()
 {
 	//static_cast_example();
-	const_cast_example();
+	//const_cast_example();
 	dynamic_cast_example();
-	reinterpret_cast_example();
+	//reinterpret_cast_example();
 }
