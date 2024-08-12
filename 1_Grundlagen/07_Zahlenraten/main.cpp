@@ -8,7 +8,7 @@ int main()
 	int tipp, anzahl_versuche = 0;
 
 	// Zufallszahlengenerator wird mit der Uhrzeit initialisiert
-	srand(static_cast<unsigned int> (time(nullptr)));
+	srand(time(nullptr));
 
 	// Geheimzahl zwischen 1 und 100 ermitteln
 	const int geheimzahl = 1 + rand() % 100;
