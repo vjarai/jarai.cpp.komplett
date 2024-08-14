@@ -39,7 +39,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07_Zahlenraten", "1_Grundla
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08_function_overloading", "1_Grundlagen\08_function_overloading\08_function_overloading.vcxproj", "{8EBA462B-92AB-4C2E-837C-7761E7EB20AD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_static_cast", "1_Grundlagen\09_explicit_conversions\09_explicit_conversions.vcxproj", "{7E5CBA77-76AB-47D8-BF27-8D39675D18ED}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_casting", "1_Grundlagen\09_explicit_conversions\09_explicit_conversions.vcxproj", "{7E5CBA77-76AB-47D8-BF27-8D39675D18ED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 Patterns", "4 Patterns", "{AAFFC6AA-3193-49C9-B228-D4AC2C7EA8E5}"
 EndProject
@@ -83,8 +83,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2_adaptor_pattern", "7_Patt
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2_const_pointer", "2_Pointer_und_Arrays\2_const_pointer\2_const_pointer.vcxproj", "{3427B341-CF95-4F12-A10F-1E4AB314E39A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3_inheritance", "3_Objektorientierung\3_Vererbung\3_Vererbung.vcxproj", "{70ED2EF8-217B-443B-9D84-7BC3976A29FB}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3_functor", "5_Advanced_Cpp\3_functor\3_functor.vcxproj", "{C20B321C-FCD3-4371-8A9B-3BFC57EB3F7A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4_multiple_inheritance", "5_Advanced_Cpp\4_multiple_inheritance\4_multiple_inheritance.vcxproj", "{00F09D49-2C07-426E-92A7-951405419E69}"
@@ -98,6 +96,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7_pointer_vs_reference", "2_Pointer_und_Arrays\7_pointer_vs_reference\07_pointer_vs_reference.vcxproj", "{BA522B77-FD82-4F8C-B78E-D5625D6CD441}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5_composite_pattern", "5_composite_pattern\5_composite_pattern.vcxproj", "{2F459E98-A6CE-4507-AE82-57847AD5D38B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3_pure_virtual", "3_Objektorientierung\3_pure_virtual\3_pure_virtual.vcxproj", "{70ED2EF8-217B-443B-9D84-7BC3976A29FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -505,18 +505,6 @@ Global
 		{3427B341-CF95-4F12-A10F-1E4AB314E39A}.Template|x64.Build.0 = Debug|x64
 		{3427B341-CF95-4F12-A10F-1E4AB314E39A}.Template|x86.ActiveCfg = Debug|Win32
 		{3427B341-CF95-4F12-A10F-1E4AB314E39A}.Template|x86.Build.0 = Debug|Win32
-		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Debug|x64.ActiveCfg = Debug|Win32
-		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Debug|x64.Build.0 = Debug|Win32
-		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Debug|x86.ActiveCfg = Debug|Win32
-		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Debug|x86.Build.0 = Debug|Win32
-		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Release|x64.ActiveCfg = Release|Win32
-		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Release|x64.Build.0 = Release|Win32
-		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Release|x86.ActiveCfg = Release|Win32
-		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Release|x86.Build.0 = Release|Win32
-		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Template|x64.ActiveCfg = Debug|Win32
-		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Template|x64.Build.0 = Debug|Win32
-		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Template|x86.ActiveCfg = Debug|Win32
-		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Template|x86.Build.0 = Debug|Win32
 		{C20B321C-FCD3-4371-8A9B-3BFC57EB3F7A}.Debug|x64.ActiveCfg = Debug|x64
 		{C20B321C-FCD3-4371-8A9B-3BFC57EB3F7A}.Debug|x64.Build.0 = Debug|x64
 		{C20B321C-FCD3-4371-8A9B-3BFC57EB3F7A}.Debug|x86.ActiveCfg = Debug|Win32
@@ -601,6 +589,18 @@ Global
 		{2F459E98-A6CE-4507-AE82-57847AD5D38B}.Template|x64.Build.0 = Debug|x64
 		{2F459E98-A6CE-4507-AE82-57847AD5D38B}.Template|x86.ActiveCfg = Debug|Win32
 		{2F459E98-A6CE-4507-AE82-57847AD5D38B}.Template|x86.Build.0 = Debug|Win32
+		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Debug|x64.ActiveCfg = Debug|Win32
+		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Debug|x64.Build.0 = Debug|Win32
+		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Debug|x86.ActiveCfg = Debug|Win32
+		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Debug|x86.Build.0 = Debug|Win32
+		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Release|x64.ActiveCfg = Release|Win32
+		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Release|x64.Build.0 = Release|Win32
+		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Release|x86.ActiveCfg = Release|Win32
+		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Release|x86.Build.0 = Release|Win32
+		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Template|x64.ActiveCfg = Debug|Win32
+		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Template|x64.Build.0 = Debug|Win32
+		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Template|x86.ActiveCfg = Debug|Win32
+		{70ED2EF8-217B-443B-9D84-7BC3976A29FB}.Template|x86.Build.0 = Debug|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -639,7 +639,6 @@ Global
 		{A836DEEC-C5D1-4AA7-8E83-727A90BD040D} = {6C1306BD-6815-4556-82D4-F09561EF8F5E}
 		{413B61AE-5B9B-4E2E-80F1-F9774E0F40A9} = {AAFFC6AA-3193-49C9-B228-D4AC2C7EA8E5}
 		{3427B341-CF95-4F12-A10F-1E4AB314E39A} = {08FC134B-5364-4381-BDE6-C55A369AF200}
-		{70ED2EF8-217B-443B-9D84-7BC3976A29FB} = {8F4912DD-0B58-4DF5-BDD2-492A38DD4D09}
 		{C20B321C-FCD3-4371-8A9B-3BFC57EB3F7A} = {2AFD4213-02C6-4FD0-AE20-4E0A47D29004}
 		{00F09D49-2C07-426E-92A7-951405419E69} = {2AFD4213-02C6-4FD0-AE20-4E0A47D29004}
 		{73CF4C1D-54F2-40FE-BB52-B0792EB47A6D} = {11ECA3CD-658D-4CD5-9012-4CD5CB1663FF}
@@ -647,6 +646,7 @@ Global
 		{EC20F909-81B1-4AB4-A3AD-BF7B4CC296A4} = {8F4912DD-0B58-4DF5-BDD2-492A38DD4D09}
 		{BA522B77-FD82-4F8C-B78E-D5625D6CD441} = {08FC134B-5364-4381-BDE6-C55A369AF200}
 		{2F459E98-A6CE-4507-AE82-57847AD5D38B} = {AAFFC6AA-3193-49C9-B228-D4AC2C7EA8E5}
+		{70ED2EF8-217B-443B-9D84-7BC3976A29FB} = {8F4912DD-0B58-4DF5-BDD2-492A38DD4D09}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4DC28170-9B9E-4C77-90E6-6CB7FFEDC66F}

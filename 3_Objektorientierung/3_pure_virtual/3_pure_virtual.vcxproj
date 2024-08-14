@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>3_inheritance</ProjectName>
+    <ProjectName>3_pure_virtual</ProjectName>
     <ProjectGuid>{70ED2EF8-217B-443B-9D84-7BC3976A29FB}</ProjectGuid>
     <RootNamespace>IKEA_MÖBEL</RootNamespace>
   </PropertyGroup>
