@@ -9,10 +9,12 @@ class Ikea
 public:
 	Moebel* verkaufen();
 	Ikea(const std::string& standort);
+	void anzeigen();
 	virtual ~Ikea();
 
 protected:
-	double umsatz_;
+	double filial_umsatz_;
+	static double konzern_umsatz_; // Klassenvariable, wird von allen Ikea-Objekten geteilt
 	std::string standort_;
 };
 

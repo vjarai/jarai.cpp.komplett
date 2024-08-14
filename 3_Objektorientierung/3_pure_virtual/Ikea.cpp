@@ -7,17 +7,26 @@ using namespace std;
 
 #include "IKEA.h"
 
+// Initialisierung der statischen Klassenvariablen
+double Ikea::konzern_umsatz_ = 0;
+
 Ikea::Ikea(const std::string& standort)
 {
-	umsatz_ = 0;
+	filial_umsatz_ = 0;
 	standort_ = standort;
 	cout << "IKEA in " << standort_ << " gebaut!" << endl;
+}
+
+void Ikea::anzeigen()
+{
+	cout << "IKEA in " << standort_ << " hat einen Umsatz von " << filial_umsatz_ << " EUR" << endl;
+	cout << "Der Konzernumsatz betraegt " << konzern_umsatz_ << " EUR" << endl;
 }
 
 
 Ikea::~Ikea()
 {
-	cout << "IKEA in " << standort_ << " abgerissen. Umsatz: " << umsatz_ << " EUR" << endl;
+	cout << "IKEA in " << standort_ << " abgerissen. Umsatz: " << filial_umsatz_ << " EUR" << endl;
 }
 
 
@@ -40,7 +49,10 @@ Moebel* Ikea::verkaufen()
 		pMoebel = nullptr; // nichts verkauft...
 
 	if (pMoebel != nullptr)
-		umsatz_ += pMoebel->get_preis(); // Ikea Umsatz steigt...
+	{
+		filial_umsatz_ += pMoebel->get_preis(); // Ikea Umsatz steigt...
+		konzern_umsatz_ += pMoebel->get_preis(); // Konzernumsatz steigt...
+	}
 
 	return pMoebel;
 }
