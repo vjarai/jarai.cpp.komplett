@@ -35,6 +35,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="_ReadMe\ClassDiagram.ump" />
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="_ReadMe\ClassDiagram.jpg">

@@ -136,6 +136,7 @@
     <ClInclude Include="Motor.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
     <None Include="_ReadMe\ClassDiagram.ump" />
   </ItemGroup>
   <ItemGroup>
