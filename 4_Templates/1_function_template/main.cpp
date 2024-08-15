@@ -14,5 +14,5 @@ int main()
 	cout << maximum(b, a) << endl;
 
 	tausche(x, y);
-	tausche(a, b);
+	tausche<double>(a, b);
 }
