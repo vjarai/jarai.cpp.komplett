@@ -7,9 +7,9 @@ private:
     T inhalt_;
 
 public:
-    void beladen(T neuerInahlt)
+    void beladen(T neuerInhalt)
     {
-        inhalt_ = neuerInahlt;
+        inhalt_ = neuerInhalt;
     }
 
     T entladen()
