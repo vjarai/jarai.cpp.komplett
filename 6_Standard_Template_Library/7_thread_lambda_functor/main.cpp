@@ -39,9 +39,11 @@ int main()
 		}
 	};
 
-	std::thread t1(lambda, 20);
-	std::thread t2(my_functor, 20);
-	std::thread t3(worker_function, 20);
+	int anzahl = 20;
+
+	std::thread t1(lambda, anzahl);
+	std::thread t2(my_functor, anzahl);
+	std::thread t3(worker_function, anzahl);
 
 	t1.join();
 	t2.join();
