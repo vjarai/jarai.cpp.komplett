@@ -7,15 +7,15 @@
 
 int main()
 {
-	IPhone phone("Hello World!");
+	IPhone meinTelefon;
 	AppleLadegeraet apple_ladegeraet;
 
-	phone.aufladen(apple_ladegeraet);
+	meinTelefon.aufladen(apple_ladegeraet);
 
 	UsbLadegeraet usb_ladegeraet;
-	//phone.aufladen(usb_ladegeraet);
+	//meinTelefon.aufladen(usb_ladegeraet);
 
 	UsbToLightningAdapter pdf_creator_adapter(usb_ladegeraet);
-	phone.aufladen(pdf_creator_adapter);
+	meinTelefon.aufladen(pdf_creator_adapter);
 }
 

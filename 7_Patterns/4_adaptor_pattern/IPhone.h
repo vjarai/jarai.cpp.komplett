@@ -6,8 +6,8 @@
 class IPhone
 {
 public:
-	explicit IPhone(std::string text);
+	IPhone();
 	void aufladen(AppleLadegeraet& ladegeraet);
-	std::string text_;
+	
 };
 

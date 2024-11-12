@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-IPhone::IPhone(std::string text)
+IPhone::IPhone()
 {
 	std::cout << "IPhone created: " << std::endl;
 }
