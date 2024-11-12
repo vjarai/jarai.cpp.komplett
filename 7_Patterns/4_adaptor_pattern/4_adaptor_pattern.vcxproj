@@ -129,16 +129,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Letter.cpp" />
-    <ClCompile Include="PdfCreator.cpp" />
-    <ClCompile Include="PdfCreatorToPrinterAdapter.cpp" />
-    <ClCompile Include="Printer.cpp" />
+    <ClCompile Include="IPhone.cpp" />
+    <ClCompile Include="UsbLadegeraet.cpp" />
+    <ClCompile Include="UsbToLightningAdapter.cpp" />
+    <ClCompile Include="AppleLadegeraet.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Letter.h" />
-    <ClInclude Include="PdfCreator.h" />
-    <ClInclude Include="PdfCreatorToPrinterAdapter.h" />
-    <ClInclude Include="Printer.h" />
+    <ClInclude Include="IPhone.h" />
+    <ClInclude Include="UsbLadegeraet.h" />
+    <ClInclude Include="UsbToLightningAdapter.h" />
+    <ClInclude Include="AppleLadegeraet.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

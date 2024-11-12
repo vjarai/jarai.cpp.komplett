@@ -18,30 +18,30 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Letter.cpp">
+    <ClCompile Include="IPhone.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Printer.cpp">
+    <ClCompile Include="AppleLadegeraet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PdfCreator.cpp">
+    <ClCompile Include="UsbLadegeraet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PdfCreatorToPrinterAdapter.cpp">
+    <ClCompile Include="UsbToLightningAdapter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Letter.h">
+    <ClInclude Include="IPhone.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Printer.h">
+    <ClInclude Include="AppleLadegeraet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PdfCreator.h">
+    <ClInclude Include="UsbLadegeraet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PdfCreatorToPrinterAdapter.h">
+    <ClInclude Include="UsbToLightningAdapter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

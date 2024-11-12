@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Printer">
-    <Position X="5.25" Y="1.75" Width="2.25" />
+  <Class Name="IPhone">
+    <Position X="1.5" Y="0.75" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AAQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Printer.h</FileName>
+      <HashCode>AAQAAAAAAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPhone.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PdfCreator">
-    <Position X="9.25" Y="4.25" Width="2.75" />
+  <Class Name="UsbLadegeraet">
+    <Position X="7" Y="3.25" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
-      <FileName>PdfCreator.h</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UsbLadegeraet.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Letter">
-    <Position X="1.75" Y="1.75" Width="2.5" />
+  <Class Name="UsbToLightningAdapter">
+    <Position X="1.5" Y="3" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAQAAAAABAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Letter.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="PdfCreatorToPrinterAdapter">
-    <Position X="4.5" Y="4.25" Width="3.75" />
-    <TypeIdentifier>
-      <HashCode>CAQAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>PdfCreatorToPrinterAdapter.h</FileName>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQ=</HashCode>
+      <FileName>UsbToLightningAdapter.h</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="pdfcreator_" />
+      <Field Name="usbLadegeraet" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="AppleLadegeraet">
+    <Position X="7" Y="0.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppleLadegeraet.h</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

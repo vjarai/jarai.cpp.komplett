@@ -1,21 +1,21 @@
 
 #include <iostream>
 
-#include "Letter.h"
-#include "PdfCreator.h"
-#include "PdfCreatorToPrinterAdapter.h"
+#include "IPhone.h"
+#include "UsbLadegeraet.h"
+#include "UsbToLightningAdapter.h"
 
 int main()
 {
-	Letter my_letter("Hello World!");
-	Printer my_printer;
+	IPhone my_letter("Hello World!");
+	AppleLadegeraet my_printer;
 
-	my_letter.send_to(my_printer);
+	my_letter.aufladen(my_printer);
 
-	PdfCreator my_pdfcreator;
-	//my_letter.send_to(my_pdfcreator);
+	UsbLadegeraet my_pdfcreator;
+	//my_letter.aufladen(my_pdfcreator);
 
-	PdfCreatorToPrinterAdapter pdf_creator_adapter(my_pdfcreator);
-	my_letter.send_to(pdf_creator_adapter);
+	UsbToLightningAdapter pdf_creator_adapter(my_pdfcreator);
+	my_letter.aufladen(pdf_creator_adapter);
 }
 
