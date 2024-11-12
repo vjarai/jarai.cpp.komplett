@@ -14,16 +14,6 @@
       <FileName>UsbLadegeraet.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="UsbToLightningAdapter">
-    <Position X="1.5" Y="3" Width="3.75" />
-    <TypeIdentifier>
-      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQ=</HashCode>
-      <FileName>UsbToLightningAdapter.h</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="usbLadegeraet" />
-    </ShowAsAssociation>
-  </Class>
   <Class Name="AppleLadegeraet">
     <Position X="7" Y="0.75" Width="3.5" />
     <TypeIdentifier>
