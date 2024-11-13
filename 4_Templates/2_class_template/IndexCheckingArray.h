@@ -16,7 +16,7 @@ public:
 		size_ = size;
 
 		for (int i = 0; i < size_; i++) // internes Array vorbelegen
-			ptr_internal_array_[i] = 0;
+			ptr_internal_array_[i] = T();
 
 		std::cout << "Array created..." << std::endl;
 	}

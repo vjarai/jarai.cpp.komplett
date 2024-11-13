@@ -1,25 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="IPhone">
-    <Position X="1.5" Y="0.75" Width="3.25" />
+    <Position X="1.5" Y="1.25" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAABAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
       <FileName>IPhone.h</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="AppleLadegeraet">
+    <Position X="6.25" Y="1.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AppleLadegeraet.h</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="UsbLadegeraet">
-    <Position X="7" Y="3.25" Width="3.25" />
+    <Position X="7.25" Y="4" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>UsbLadegeraet.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AppleLadegeraet">
-    <Position X="7" Y="0.75" Width="3.5" />
+  <Class Name="UsbToLightningAdapter">
+    <Position X="1.5" Y="3.75" Width="4" />
     <TypeIdentifier>
-      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>AppleLadegeraet.h</FileName>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQ=</HashCode>
+      <FileName>UsbToLightningAdapter.h</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="usbLadegeraet" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -3,6 +3,8 @@
 
 #include "AppleLadegeraet.h"
 
+class UsbLadegeraet;
+
 class IPhone
 {
 public:
