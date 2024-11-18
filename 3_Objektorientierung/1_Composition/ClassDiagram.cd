@@ -3,7 +3,7 @@
   <Class Name="Auto">
     <Position X="0.5" Y="0.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAAAABAAAFAgAAAACAAAAABAAkAEAAACAAAAA=</HashCode>
+      <HashCode>AoAAAAAAAAABAAAFAgAAAACAAAAABAAkAEAAACAAAAA=</HashCode>
       <FileName>Auto.h</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -28,9 +28,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Cabrio">
-    <Position X="0.5" Y="4" Width="2" />
+    <Position X="1" Y="4.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAACAABAAAAAAgAAAAAAAAAAAAEAAABAQAAAAA=</HashCode>
       <FileName>Cabrio.h</FileName>
     </TypeIdentifier>
   </Class>

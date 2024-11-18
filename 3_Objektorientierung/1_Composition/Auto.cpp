@@ -11,6 +11,11 @@ Auto::Auto()
 	farbe_ = "Blau";
 	marke_ = "VW";
 
+	_anzahlAutos++;
+
+	_fahrgestellnummer = _anzahlAutos;
+
+
 	//Meldung ausgeben
 	cout << "Auto wurde produziert!" << endl;
 }

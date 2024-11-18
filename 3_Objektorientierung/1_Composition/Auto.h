@@ -18,6 +18,12 @@ public:
 	virtual ~Auto();
 
 private:
+	// Static: Klassenvariable, gibts nur einmal pro Klasse
+	static int _anzahlAutos;
+
+	// Instanzvariablen
+	int _fahrgestellnummer;
+
 	Rad raeder_[4];
 	Motor motor_;
 	int ps_;
