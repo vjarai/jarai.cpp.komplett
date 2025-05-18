@@ -1,5 +1,4 @@
-#include <iostream>		// "Neue" C++ Header (ohne .h)
-#include <Windows.h>	// Windows Header für SetConsoleOutputCP
+ï»¿#include <iostream>		// "Neue" C++ Header (ohne .h)
 
 // Umfangreiche Coding Guidelines und Best Practices
 // https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines
@@ -11,11 +10,11 @@
 	Die Funktion main() ist der Einstiegspunkt der Anwendung
 */
 
-int main(int argc, char* argv[])  // Parameter von der Commandozeile sind optional
+int main()  // Parameter von der Commandozeile sind optional
 {
-	SetConsoleOutputCP(65001);	// UTF-8 Codepage setzen
 
-	std::cout << "Hallo Welt!!" << std::endl; // Dies ist ein einzeiliger Kommentar
+	// Einzeiliger Kommentar
+	std::cout << "Hallo Welt!\n"; // << std::endl;
 
 	return 0; // returncode 0 ist optional
 }
