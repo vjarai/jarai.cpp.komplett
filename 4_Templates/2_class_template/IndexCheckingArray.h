@@ -31,7 +31,7 @@ public:
 	{
 		if (index >= size_ || index < 0)
 		{
-			throw std::exception("Index ausserhalb des gueltigen Bereichs");
+			throw std::runtime_error("Index ausserhalb des gueltigen Bereichs");
 		}
 
 		return ptr_internal_array_[index];

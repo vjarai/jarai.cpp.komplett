@@ -51,28 +51,14 @@ void reinterpret_cast_example()
 
 	double* ptr2 = reinterpret_cast<double*>(ptr);
 
-	// reinterpret_cast erlaubt auch Typkonversionen, die normalerweise erlaubt sind
-	// z.B. von int nach int*
 	int* ptr3 = reinterpret_cast<int*>(i);
 
-	// reinterpret_cast erlaubt auch Typkonversionen, die normalerweise erlaubt sind
-	// z.B. von int* nach int
-	int i2 = reinterpret_cast<int>(ptr);
+	long int ref = reinterpret_cast<long int &>(ptr);
 
-	// reinterpret_cast erlaubt auch Typkonversionen, die normalerweise erlaubt sind
-	// z.B. von int* nach int&
-	int& ref = reinterpret_cast<int&>(ptr);
-
-	// reinterpret_cast erlaubt auch Typkonversionen, die normalerweise erlaubt sind
-	// z.B. von int& nach int*
 	int* ptr4 = reinterpret_cast<int*>(&ref);
 
-	// reinterpret_cast erlaubt auch Typkonversionen, die normalerweise erlaubt sind
-	// z.B. von int nach int&
 	int& ref2 = reinterpret_cast<int&>(i);
 
-	// reinterpret_cast erlaubt auch Typkonversionen, die normalerweise erlaubt sind
-	// z.B. von int nach int*
 	int* ptr5 = reinterpret_cast<int*>(&i);
 
 }
@@ -99,7 +85,7 @@ void dynamic_cast_example()
 
 	if (ptr_pkw == nullptr)
 	{
-		throw exception("Das Kfz ist kein Pkw!");
+		throw std::runtime_error("Das Kfz ist kein Pkw!");
 	}
 
 	ptr_pkw->einsteigen();

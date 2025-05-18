@@ -34,10 +34,10 @@ void Konto::einzahlen(double betrag)
 void Konto::abheben(double betrag, int pin)
 {
 	if (pin != pin_)
-		throw exception("Pin ungueltig.");
+		throw runtime_error("Pin ungueltig.");
 
 	if (kontostand_ - betrag < 0)
-		throw exception("Betrag kann nicht abgehoben werden, keine Deckung.");
+		throw runtime_error("Betrag kann nicht abgehoben werden, keine Deckung.");
 
 	kontostand_ -= betrag;
 
