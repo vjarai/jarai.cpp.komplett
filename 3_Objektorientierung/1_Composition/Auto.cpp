@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+int Auto::_anzahlAutos = 0;
 
 Auto::Auto()
 {
