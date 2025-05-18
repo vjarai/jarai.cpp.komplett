@@ -1,5 +1,7 @@
 #include "Telefonzustand.h"
 
+#include <stdexcept>
+
 
 std::unique_ptr<Telefonzustand> Telefonzustand::abheben()
 {
