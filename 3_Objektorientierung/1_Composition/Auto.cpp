@@ -5,6 +5,7 @@ using namespace std;
 int Auto::_anzahlAutos = 0;
 
 Auto::Auto()
+	: raeder_{ Rad("VL"), Rad("VR"), Rad("HL"), Rad("HR") } // Initialisierung der Raeder
 {
 	ps_ = 70;
 	tachostand_ = 0;

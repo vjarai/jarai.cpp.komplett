@@ -4,27 +4,27 @@
 using namespace std;
 
 Rad::Rad()
+	: position_("unbekannt")
 {
 	profiltiefe_ = 5;
 	luftdruck_ = 2;
 	cout << "Rad wurde produziert!" << endl;
 }
 
-Rad::~Rad()
+Rad::Rad(const std::string& position)
+: position_(position)
 {
-	cout << "Rad wurde verschrottet!" << endl;
+	profiltiefe_ = 5;
+	luftdruck_ = 2;
+	cout << "Rad " << position_ << " wurde produziert!" << endl;
 }
 
-void Rad::aufpumpen()
+Rad::~Rad()
 {
-	luftdruck_ += 1;
-	cout << "Rad wurde auf ";
-	cout << luftdruck_;
-	cout << " bar aufgepumpt!";
-	cout << endl;
+	cout << "Rad "<< position_ <<" wurde verschrottet!" << endl;
 }
 
 void Rad::anzeigen() const
 {
-	cout << "Luftdruck " << luftdruck_ << endl;
+	cout << "Luftdruck " << position_ << ":" << luftdruck_ << endl;
 }
