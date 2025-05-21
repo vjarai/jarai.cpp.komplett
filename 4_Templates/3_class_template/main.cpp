@@ -8,7 +8,9 @@ int main()
     Schiffscontainer<int> meinContainer;
 
     meinContainer.beladen(10);
-    int x = meinContainer.entladen();
-    std::cout << x;
+
+    int ladung = meinContainer.entladen();
+
+	std::cout << "Ladung: " << ladung << std::endl;
 
 }

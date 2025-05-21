@@ -2,7 +2,6 @@
 
 
 template <typename T>
-// Template-Klasse Schiffscontainer Header Only Template (inline)
 class Schiffscontainer
 {
 private:
