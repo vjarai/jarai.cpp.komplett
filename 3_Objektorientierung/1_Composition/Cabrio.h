@@ -1,8 +1,7 @@
 #pragma once
 #include "Auto.h"
 
-class Cabrio :
-	public Auto
+class Cabrio : 	public Auto
 {
 	private:
 	bool verdeckOffen_ = false;
@@ -14,5 +13,6 @@ public:
 	void schliessen();
 
 	void anzeigen() override;
+	void fahren(double strecke) override;
 };
 

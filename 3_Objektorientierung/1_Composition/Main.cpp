@@ -1,23 +1,26 @@
+#include <iostream>
+
 #include "Auto.h"
 #include "Cabrio.h"
 
 int main()
 {
-	// Instanz erstellen
 	Auto mein_auto;
-	mein_auto.anzeigen();
-
-	mein_auto.tanken(30);
-	mein_auto.anzeigen();
-
-	mein_auto.fahren(100);
-	mein_auto.anzeigen();
-
-	// Instanz Cabrio erstellen
 	Cabrio dein_auto;
 
-	dein_auto.oeffnen();
-	dein_auto.fahren(100);
-	dein_auto.schliessen();
+	std::cout << "Womit fahren? \n1 = Auto, 2 = Cabrio\n";
 
+	Auto* ptr_auto;
+	int eingabe;
+
+	std::cin >> eingabe;
+
+	if (eingabe == 1)
+		ptr_auto = &mein_auto;
+	else
+		ptr_auto = &dein_auto;
+
+	//(*ptr_auto).fahren(100);
+
+	ptr_auto->fahren(200);
 }

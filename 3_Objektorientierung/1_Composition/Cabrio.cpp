@@ -29,3 +29,13 @@ void Cabrio::anzeigen()
 	std::cout << "Verdeck ist " << (verdeckOffen_ ? "Offen" : "zu") << "." << std::endl;
 	Auto::anzeigen();
 }
+
+void Cabrio::fahren(double strecke)
+{
+
+	oeffnen();
+
+	Auto::fahren(strecke);
+
+	schliessen();
+}

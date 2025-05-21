@@ -11,7 +11,7 @@ class Auto
 {
 public:
 	void tanken(double liter);
-	void fahren(double strecke);
+	virtual void fahren(double strecke);
 	virtual void anzeigen();
 
 	Auto();
