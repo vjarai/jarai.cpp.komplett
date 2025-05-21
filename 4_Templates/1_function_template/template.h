@@ -15,3 +15,11 @@ void tausche(T& x, T& y)
 	y = temp;
 }
 
+// Ab C++20 ist auch auto möglich als typ für function templates
+void tausche_modern20(auto & x, auto& y)
+{
+	auto temp = x;
+	x = y;
+	y = temp;
+}
+
