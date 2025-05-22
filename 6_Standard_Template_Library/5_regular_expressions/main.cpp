@@ -4,20 +4,22 @@
 
 int main()
 {
-    std::string subject("This is a test");
-
+    std::cout << "Bitte email eingeben" << std::endl;
+        
+    std::string subject;
+    std::cin >> subject;
+    
     try {
-        std::regex regex("\\w+");
-        std::sregex_iterator iterator(subject.begin(), subject.end(), regex);
-        std::sregex_iterator end;
-
-        while (iterator != end) {
-            std::smatch match = *iterator;
-            std::cout << match.str() << "\n";
-            ++iterator;
+        // Einfache E-Mail-Regex (RFC-konformere Varianten sind komplexer)
+        std::regex regex(R"([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})");
+        if (std::regex_match(subject, regex)) {
+            std::cout << "Super, das ist eine korrekte E-Mail-Adresse!\n";
+        }
+        else {
+            std::cout << "Das ist leider keine korrekte E-Mail-Adresse\n";
         }
     }
-    catch (std::regex_error& e) // Syntax error in the regular expression
+    catch (std::regex_error& e)
     {
         std::cout << e.what();
     }
