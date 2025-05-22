@@ -52,7 +52,7 @@ void producer()
 
 void consumer()
 {
-	while (!done) {
+	while (!done || !buffer.empty() ) {
 		std::unique_lock<std::mutex> lock(mtx);
 		cv.wait(lock, [] { return !buffer.empty(); });
 
