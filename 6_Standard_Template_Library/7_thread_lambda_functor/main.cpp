@@ -5,15 +5,22 @@
 
 using namespace std::chrono_literals;
 
-class Functor
+class Functor // Functor ist eine Klasse die wie eine Funktion aufgerufen werden kann
+	// aber zusätzlich einen Zustand (Member-Variable) speichern kann
 {
+
 public:
+	int summe = 0;
+
+
 	void operator()(int count)
 	{
 		for (int i = 0; i < count; i++)
 		{
 			std::cout << "Thread 1: " << i << std::endl;
 			std::this_thread::sleep_for(10ms);
+
+			summe++;
 		}
 	}
 };
@@ -30,6 +37,7 @@ void worker_function(int count)
 int main()
 {
 	Functor my_functor;
+
 	auto lambda = [](int count)
 	{
 		for (int i = 0; i < count; i++)
@@ -42,12 +50,13 @@ int main()
 	int anzahl = 20;
 
 	std::thread t1(lambda, anzahl);
-	std::thread t2(my_functor, anzahl);
+	std::thread t2(std::ref(my_functor), anzahl);
 	std::thread t3(worker_function, anzahl);
 
 	t1.join();
 	t2.join();
 	t3.join();
 
+	std::cout << my_functor.summe << std::endl;
 }
 
