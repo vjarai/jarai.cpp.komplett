@@ -8,7 +8,7 @@
 •	The consumer function consumes integers from the buffer.
 •	We use a std::mutex (mtx) to protect access to the buffer and a std::condition_variable (cv) to synchronize the producer and consumer threads.
 •	The producer and consumer functions use std::unique_lock<std::mutex> to lock the mutex and cv.wait to wait for the condition variable.
-•	The main function creates one producer thread and one consumer thread, and then joins them.he main function creates two producer threads and two consumer threads, and then joins them.
+•	The main function creates one producer thread and one consumer thread, and then joins them.
 
 How It Works:
 •	Blocking: When the cv.wait method is called, it will block the current thread (in this case, the producer thread) until the condition variable (cv) is notified.
@@ -52,7 +52,8 @@ void producer()
 
 void consumer()
 {
-	while (!done || !buffer.empty() ) {
+	while (!done || !buffer.empty() ) 
+	{
 		std::unique_lock<std::mutex> lock(mtx);
 		cv.wait(lock, [] { return !buffer.empty(); });
 
