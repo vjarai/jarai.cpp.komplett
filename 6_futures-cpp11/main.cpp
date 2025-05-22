@@ -77,17 +77,17 @@ int main() {
     auto baconFuture = std::async(std::launch::async, FryBacon, 3);
     auto toastFuture = std::async(std::launch::async, MakeToastWithButterAndJam, 2);
 
-    std::vector<std::pair<std::string, std::future<void>>> tasks;
-    tasks.emplace_back("eggs", std::async(std::launch::async, [&eggsFuture]() { eggsFuture.get(); }));
-    tasks.emplace_back("bacon", std::async(std::launch::async, [&baconFuture]() { baconFuture.get(); }));
-    tasks.emplace_back("toast", std::async(std::launch::async, [&toastFuture]() { toastFuture.get(); }));
+    auto egg = eggsFuture.get();
+	auto bacon = baconFuture.get();
+	auto toast = toastFuture.get();
 
-    for (auto& item : tasks) {
-        item.second.wait();
-        std::cout << item.first << " are ready" << std::endl;
-    }
+	std::cout << "eggs are ready" << std::endl;
+	std::cout << "bacon is ready" << std::endl;
+	std::cout << "toast is ready" << std::endl;
 
-    Juice oj = PourJuice();
+	std::cout << "Pouring orange juice" << std::endl;
+	std::this_thread::sleep_for(std::chrono::seconds(3));
+	Juice oj = PourJuice();
     std::cout << "oj is ready" << std::endl;
     std::cout << "Breakfast is ready!" << std::endl;
 
