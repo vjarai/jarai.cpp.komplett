@@ -8,21 +8,21 @@
     </TypeIdentifier>
   </Class>
   <Class Name="AppleLadegeraet">
-    <Position X="6.25" Y="1.25" Width="3.5" />
+    <Position X="5.25" Y="1.25" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AEAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AppleLadegeraet.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="UsbLadegeraet">
-    <Position X="7.25" Y="4" Width="2" />
+    <Position X="9.75" Y="3.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>UsbLadegeraet.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="UsbToLightningAdapter">
-    <Position X="1.5" Y="3.75" Width="4" />
+    <Position X="4.25" Y="3.25" Width="4" />
     <TypeIdentifier>
       <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQ=</HashCode>
       <FileName>UsbToLightningAdapter.h</FileName>

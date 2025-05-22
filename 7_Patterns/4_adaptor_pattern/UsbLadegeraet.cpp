@@ -9,7 +9,7 @@ UsbLadegeraet::UsbLadegeraet()
 int UsbLadegeraet::liefereStromViaUsb()
 {
 	int strom = 500;
-	std::cout << "UsbLadegeraet lifert Strom via USB " << std::endl;
+	std::cout << "UsbLadegeraet liefert Strom via USB "<< strom << std::endl;
 
 	return strom;
 }

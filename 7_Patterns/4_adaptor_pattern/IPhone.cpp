@@ -10,5 +10,6 @@ IPhone::IPhone()
 void IPhone::aufladen(AppleLadegeraet& ladegeraet)
 {
 	int strom  = ladegeraet.liefereStromViaLightning();
+
 	std::cout << "IPhone wird aufgeladen mit " << strom << " mA" << std::endl;
 }

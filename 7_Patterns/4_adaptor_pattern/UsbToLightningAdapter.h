@@ -6,7 +6,9 @@ class UsbToLightningAdapter : public AppleLadegeraet
 {
 public:
 	UsbToLightningAdapter(UsbLadegeraet & usb_ladegeraet);
+
 	int liefereStromViaLightning() override;
+
 	UsbLadegeraet& usbLadegeraet;
 };
 

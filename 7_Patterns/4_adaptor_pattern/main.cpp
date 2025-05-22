@@ -16,6 +16,7 @@ int main()
 	//meinTelefon.aufladen(usb_ladegeraet);
 
 	UsbToLightningAdapter usb_to_lightning_adapter(usb_ladegeraet);
+
 	meinTelefon.aufladen(usb_to_lightning_adapter);
 }
 
