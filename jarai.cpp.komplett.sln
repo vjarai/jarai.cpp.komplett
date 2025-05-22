@@ -105,7 +105,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7_chain_of_responsibility",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2b_weak_ptr", "6_Standard_Template_Library\2b_weak_ptr\2b_weak_ptr.vcxproj", "{91FDCC90-2D50-4484-B9FA-3A1A84A85607}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "google_test", "google_test\google_test.vcxproj", "{D8716357-DDF6-41BE-A304-CA4341C8936B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5_google_test", "google_test\google_test.vcxproj", "{D8716357-DDF6-41BE-A304-CA4341C8936B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6_futures-cpp11", "6_futures-cpp11\6_futures-cpp11.vcxproj", "{23E59E57-66F3-4C95-9FA4-0EE2FCB2076D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -657,6 +659,18 @@ Global
 		{D8716357-DDF6-41BE-A304-CA4341C8936B}.Template|x64.Build.0 = Debug|x64
 		{D8716357-DDF6-41BE-A304-CA4341C8936B}.Template|x86.ActiveCfg = Debug|Win32
 		{D8716357-DDF6-41BE-A304-CA4341C8936B}.Template|x86.Build.0 = Debug|Win32
+		{23E59E57-66F3-4C95-9FA4-0EE2FCB2076D}.Debug|x64.ActiveCfg = Debug|x64
+		{23E59E57-66F3-4C95-9FA4-0EE2FCB2076D}.Debug|x64.Build.0 = Debug|x64
+		{23E59E57-66F3-4C95-9FA4-0EE2FCB2076D}.Debug|x86.ActiveCfg = Debug|Win32
+		{23E59E57-66F3-4C95-9FA4-0EE2FCB2076D}.Debug|x86.Build.0 = Debug|Win32
+		{23E59E57-66F3-4C95-9FA4-0EE2FCB2076D}.Release|x64.ActiveCfg = Release|x64
+		{23E59E57-66F3-4C95-9FA4-0EE2FCB2076D}.Release|x64.Build.0 = Release|x64
+		{23E59E57-66F3-4C95-9FA4-0EE2FCB2076D}.Release|x86.ActiveCfg = Release|Win32
+		{23E59E57-66F3-4C95-9FA4-0EE2FCB2076D}.Release|x86.Build.0 = Release|Win32
+		{23E59E57-66F3-4C95-9FA4-0EE2FCB2076D}.Template|x64.ActiveCfg = Debug|x64
+		{23E59E57-66F3-4C95-9FA4-0EE2FCB2076D}.Template|x64.Build.0 = Debug|x64
+		{23E59E57-66F3-4C95-9FA4-0EE2FCB2076D}.Template|x86.ActiveCfg = Debug|Win32
+		{23E59E57-66F3-4C95-9FA4-0EE2FCB2076D}.Template|x86.Build.0 = Debug|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -707,6 +721,7 @@ Global
 		{6ADB2126-B2B5-46B2-AEFA-817E7EC329D3} = {AAFFC6AA-3193-49C9-B228-D4AC2C7EA8E5}
 		{91FDCC90-2D50-4484-B9FA-3A1A84A85607} = {6C1306BD-6815-4556-82D4-F09561EF8F5E}
 		{D8716357-DDF6-41BE-A304-CA4341C8936B} = {2AFD4213-02C6-4FD0-AE20-4E0A47D29004}
+		{23E59E57-66F3-4C95-9FA4-0EE2FCB2076D} = {2AFD4213-02C6-4FD0-AE20-4E0A47D29004}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4DC28170-9B9E-4C77-90E6-6CB7FFEDC66F}
