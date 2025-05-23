@@ -7,7 +7,7 @@ void read_file(const std::string& filename, double& value)
 	std::ifstream ifstream(filename, std::ios::binary | std::ios::_Nocreate);
 
 	if (!ifstream.good())
-		throw std::exception("Kann Datei nicht oeffnen.");
+		throw std::runtime_error("Kann Datei nicht oeffnen.");
 
 	ifstream >> value;
 	ifstream.close();
@@ -20,9 +20,10 @@ void write_file(const std::string& filename, double value)
 	ofstream.open(filename, std::ios::binary);
 
 	if (!ofstream.good())
-		throw std::exception("Kann Datei nicht oeffnen.");
+		throw std::runtime_error("Kann Datei nicht oeffnen.");
 
 	ofstream << value << std::endl;
+
 	ofstream.close();
 
 }
