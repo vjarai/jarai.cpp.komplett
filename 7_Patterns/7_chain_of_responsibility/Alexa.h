@@ -15,5 +15,6 @@ public:
 	Alexa();
 	~Alexa();
 	void handleRequest(const string & request);
+	void addSkill(AlexaSkill* skill);
 };
 
