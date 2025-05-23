@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Schiff">
+    <Position X="4.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAYAAAAAAAAAAQACAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Schiff.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Segelschiff">
+    <Position X="0.5" Y="1.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAgAAAAAAAAAAQAAAAAAAAAAAABAAAAEAAAA=</HashCode>
+      <FileName>Segelschiff.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Motorschiff">
+    <Position X="7.25" Y="1.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAABQAAAAAAAAAAgAAAAAAgAAAA=</HashCode>
+      <FileName>Motorschiff.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MotorSegelSchiff">
+    <Position X="3.75" Y="4.25" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAQAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MotorSegelSchiff.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
