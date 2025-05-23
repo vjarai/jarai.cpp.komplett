@@ -4,7 +4,7 @@
 
 void read_file(const std::string& filename, double& value)
 {
-	std::ifstream ifstream(filename, std::ios::binary | std::ios::_Nocreate);
+	std::ifstream ifstream(filename, std::ios::binary);
 
 	if (!ifstream.good())
 		throw std::runtime_error("Kann Datei nicht oeffnen.");
