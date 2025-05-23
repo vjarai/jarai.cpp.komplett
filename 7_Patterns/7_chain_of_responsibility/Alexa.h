@@ -9,12 +9,12 @@ using namespace std;
 class Alexa
 {
 private:
-	vector<AlexaSkill*> skills;
+	vector<shared_ptr< AlexaSkill>> skills;
 
 public:
 	Alexa();
 	~Alexa();
 	void handleRequest(const string & request);
-	void addSkill(AlexaSkill* skill);
+	void addSkill(shared_ptr<AlexaSkill> skill);
 };
 

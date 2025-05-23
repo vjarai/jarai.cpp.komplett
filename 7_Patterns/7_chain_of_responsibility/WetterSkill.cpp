@@ -1,5 +1,7 @@
 #include "WetterSkill.h"
 
+#include <iostream>
+
 
 void WetterSkill::handleRequest(const string& request)
 {

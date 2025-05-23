@@ -1,11 +1,6 @@
 #include "Alexa.h"
 #include "AlexaSkill.h"
 
-#include "DatumSkill.h"
-#include "UhrzeitSkill.h"
-#include "WetterSkill.h"
-#include "LichtSkill.h"
-
 Alexa::Alexa()
 {
 	
@@ -13,15 +8,18 @@ Alexa::Alexa()
 
 Alexa::~Alexa()
 {
-	for (AlexaSkill* skill : skills) {
-		delete skill;
-	}
+	
+}
+
+void Alexa::addSkill(shared_ptr<AlexaSkill> skill)
+{
+	skills.push_back(std::ref(skill));
 }
 
 void Alexa::handleRequest(const string & request)
 {
 
-	for (auto skill : skills) {
+	for (auto& skill : skills) {
 		if (skill->canHandleRequest(request)) 
 		{
 			skill->handleRequest(request);

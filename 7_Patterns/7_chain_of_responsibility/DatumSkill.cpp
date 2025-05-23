@@ -1,5 +1,7 @@
 #include "DatumSkill.h"
 
+#include <iostream>
+
 
 void DatumSkill::handleRequest(const string& request)
 {

@@ -15,10 +15,10 @@ int main()
 	
 	Alexa alexa;
 
-	alexa.addSkill(new WetterSkill);
-	alexa.addSkill(new UhrzeitSkill);
-	alexa.addSkill(new DatumSkill);
-	alexa.addSkill(new LichtSkill);
+	alexa.addSkill(make_unique< WetterSkill>());
+	alexa.addSkill(make_unique < UhrzeitSkill>());
+	alexa.addSkill(make_unique < DatumSkill>());
+	alexa.addSkill(make_unique < LichtSkill>());
 
 	while (true) {
 
