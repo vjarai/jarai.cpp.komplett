@@ -14,7 +14,6 @@ private:
 public:
 	Alexa();
 	~Alexa();
-	void einlesen();
-	//void funktionAusfuehren();
+	void handleRequest(const string & request);
 };
 

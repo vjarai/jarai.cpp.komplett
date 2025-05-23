@@ -4,7 +4,7 @@
 class WetterSkill : public AlexaSkill
 {
 public:
-	void ausfuehren() override;
-	bool kannAusfuehren(string& anfrage) override;
+	void handleRequest(const string& request) override;
+	bool canHandleRequest(const string& anfrage) override;
 };
 

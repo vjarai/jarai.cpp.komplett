@@ -12,7 +12,7 @@ int main()
 	Alexa alexa;
 
 	while (true) {
-		alexa.einlesen();			//Achtung: Benennung schlecht
+		alexa.handleRequest();			//Achtung: Benennung schlecht
 	 }
 
 }

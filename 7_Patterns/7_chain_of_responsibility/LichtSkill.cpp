@@ -6,7 +6,7 @@ LichtSkill::LichtSkill()
 	_licht = false;
 }
 
-void LichtSkill::ausfuehren()
+void LichtSkill::handleRequest(const string& request)
 {
 	if (_licht) {
 		_licht = !_licht;
@@ -19,7 +19,7 @@ void LichtSkill::ausfuehren()
 	}
 }
 
-bool LichtSkill::kannAusfuehren(string& anfrage)
+bool LichtSkill::canHandleRequest(const string& anfrage)
 {
 	if (anfrage.find("Licht") != std::string::npos) {
 		return true;

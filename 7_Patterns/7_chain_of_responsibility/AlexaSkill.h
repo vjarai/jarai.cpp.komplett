@@ -9,7 +9,7 @@ class AlexaSkill
 private:
 
 public:
-	virtual void ausfuehren();
-	virtual bool kannAusfuehren(string& anfrage);
+	virtual void handleRequest(const string& request);
+	virtual bool canHandleRequest(const string& request);
 };
 

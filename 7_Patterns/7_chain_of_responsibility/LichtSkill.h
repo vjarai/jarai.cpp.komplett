@@ -7,7 +7,7 @@ private:
 	bool _licht;
 public:
 	LichtSkill();
-	void ausfuehren() override;
-	bool kannAusfuehren(string& anfrage) override;
+	void handleRequest(const string& request) override;
+	bool canHandleRequest(const string& anfrage) override;
 };
 

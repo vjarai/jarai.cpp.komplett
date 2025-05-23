@@ -8,7 +8,6 @@
 
 Alexa::Alexa()
 {
-
 	skills.push_back(new WetterSkill);
 	skills.push_back(new UhrzeitSkill);
 	skills.push_back(new DatumSkill);
@@ -22,15 +21,12 @@ Alexa::~Alexa()
 	}
 }
 
-void Alexa::einlesen()
+void Alexa::handleRequest(const string & request)
 {
-	string eingabe;
-	cout << "Was soll Alexa machen?" << endl;
-	cin >> eingabe;
 
-	for (AlexaSkill* skill : skills) {
-		if (skill->kannAusfuehren(eingabe)) {
-			skill->ausfuehren();
+	for (auto skill : skills) {
+		if (skill->canHandleRequest(request)) {
+			skill->handleRequest(request);
 		}
 	}
 }
