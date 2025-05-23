@@ -8,10 +8,5 @@ void UhrzeitSkill::handleRequest(const string& request)
 
 bool UhrzeitSkill::canHandleRequest(const string& anfrage)
 {
-	if (anfrage.find("Uhrzeit") != std::string::npos) {
-		return true;
-	}
-	else {
-		return false;
-	}
+	return anfrage.find("Uhr") != std::string::npos;
 }

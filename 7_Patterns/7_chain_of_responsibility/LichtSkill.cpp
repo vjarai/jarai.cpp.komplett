@@ -21,10 +21,5 @@ void LichtSkill::handleRequest(const string& request)
 
 bool LichtSkill::canHandleRequest(const string& anfrage)
 {
-	if (anfrage.find("Licht") != std::string::npos) {
-		return true;
-	}
-	else {
-		return false;
-	}
+	return anfrage.find("Licht") != std::string::npos;
 }

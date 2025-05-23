@@ -8,10 +8,5 @@ void DatumSkill::handleRequest(const string& request)
 
 bool DatumSkill::canHandleRequest(const string& anfrage)
 {
-	if (anfrage.find("Datum") != std::string::npos) {
-		return true;
-	}
-	else {
-		return false;
-	}
+	return anfrage.find("Datum") != std::string::npos;
 }
