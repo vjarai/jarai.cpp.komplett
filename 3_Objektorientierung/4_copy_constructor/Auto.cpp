@@ -3,51 +3,48 @@
 #include <iostream>
 
 Auto::Auto(const std::string& marke, int ps)
-	: marke_(marke)
+    : marke_(marke)
 {
-	pMotor_ = new Motor(ps);
-	std::cout << "Auto erstellt: ";
-	show();
+    p_motor_ = new Motor(ps);
+    std::cout << "Auto erstellt: ";
+    anzeigen();
 }
 
 
 Auto::~Auto()
 {
-	std::cout << "Auto verschrottet: ";
-	show();
+    std::cout << "Auto verschrottet: ";
+    anzeigen();
 
-	delete pMotor_;
+    delete p_motor_;
 }
 
 Auto::Auto(const Auto& original)
 {
-	marke_ = original.marke_;
+    marke_ = original.marke_;
 
-	// Tiefe Kopie des Motors erstellen
-	pMotor_ = new Motor(*original.pMotor_);
+    // Tiefe Kopie des Motors erstellen
+    p_motor_ = new Motor(*original.p_motor_);
 
-	std::cout << "Auto geklont:  ";
-	show();
+    std::cout << "Auto geklont:  ";
+    anzeigen();
 }
 
 
 Auto& Auto::operator=(const Auto& original)
 {
-	marke_ = original.marke_;
+    marke_ = original.marke_;
 
-	// FALSCH: Flache Kopie (Kopie des Pointers)
-	// pMotor_ = Original.pMotor_;
+    // RICHTIG: Tiefe Kopie (Kopie der Motorattribute)
+    *p_motor_ = *original.p_motor_;
 
-	// RICHTIG: Tiefe Kopie (Kopie der Motorattribute)
-	*pMotor_ = *original.pMotor_;
+    std::cout << "Auto kopiert:  ";
+    anzeigen();
 
-	std::cout << "Auto kopiert:  ";
-	show();
-
-	return *this;
+    return *this;
 }
 
-void Auto::show() const
+void Auto::anzeigen() const
 {
-	std::cout << marke_ << " PS: " << pMotor_->ps_ << std::endl;
+    std::cout << marke_ << " PS: " << p_motor_->ps_ << std::endl;
 }
