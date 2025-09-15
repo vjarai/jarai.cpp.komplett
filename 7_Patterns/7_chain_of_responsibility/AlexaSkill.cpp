@@ -1,11 +1,11 @@
 #include "AlexaSkill.h"
 
-void AlexaSkill::ausfuehren()
+void AlexaSkill::handleRequest(const string& request)
 {
 
 }
 
-bool AlexaSkill::kannAusfuehren(string& anfrage)
+bool AlexaSkill::canHandleRequest(const string& request)
 {
     return false;
 }

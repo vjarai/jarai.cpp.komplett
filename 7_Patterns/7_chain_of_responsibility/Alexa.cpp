@@ -1,38 +1,33 @@
 #include "Alexa.h"
 #include "AlexaSkill.h"
 
-#include "DatumSkill.h"
-#include "UhrzeitSkill.h"
-#include "WetterSkill.h"
-#include "LichtSkill.h"
-
 Alexa::Alexa()
 {
-
-	skills.push_back(new WetterSkill);
-	skills.push_back(new UhrzeitSkill);
-	skills.push_back(new DatumSkill);
-	skills.push_back(new LichtSkill);
+	
 }
 
 Alexa::~Alexa()
 {
-	for (AlexaSkill* skill : skills) {
-		delete skill;
-	}
+	
 }
 
-void Alexa::einlesen()
+void Alexa::addSkill(shared_ptr<AlexaSkill> skill)
 {
-	string eingabe;
-	cout << "Was soll Alexa machen?" << endl;
-	cin >> eingabe;
+	skills.push_back(std::ref(skill));
+}
 
-	for (AlexaSkill* skill : skills) {
-		if (skill->kannAusfuehren(eingabe)) {
-			skill->ausfuehren();
+void Alexa::handleRequest(const string & request)
+{
+
+	for (auto& skill : skills) {
+		if (skill->canHandleRequest(request)) 
+		{
+			skill->handleRequest(request);
+			return;
 		}
 	}
+
+	cout << "Alexa: Sorry, I can't help with that." << endl;
 }
 
 

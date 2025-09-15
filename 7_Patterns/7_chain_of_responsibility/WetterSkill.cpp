@@ -1,17 +1,14 @@
 #include "WetterSkill.h"
 
+#include <iostream>
 
-void WetterSkill::ausfuehren()
+
+void WetterSkill::handleRequest(const string& request)
 {
 	cout << "Das Wetter ist gut!" << endl;
 }
 
-bool WetterSkill::kannAusfuehren(string& anfrage)
+bool WetterSkill::canHandleRequest(const string& anfrage)
 {
-	if (anfrage.find("Wetter") != std::string::npos) {
-		return true;
-	}
-	else {
-		return false;
-	}
+	return anfrage.find("Wetter") != std::string::npos;
 }

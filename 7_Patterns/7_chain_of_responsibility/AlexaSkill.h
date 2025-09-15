@@ -1,5 +1,4 @@
 #pragma once
-#include <iostream>
 #include <string>
 
 using namespace std;
@@ -9,7 +8,7 @@ class AlexaSkill
 private:
 
 public:
-	virtual void ausfuehren();
-	virtual bool kannAusfuehren(string& anfrage);
+	virtual void handleRequest(const string& request) = 0;
+	virtual bool canHandleRequest(const string& request) = 0;
 };
 
