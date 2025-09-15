@@ -1,0 +1,48 @@
+# .editorconfig for C++ using lower_case naming conventions and best practices
+# Top-most EditorConfig file
+root = true
+
+# All files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+max_line_length = 120
+
+# C++ files
+[*.{cpp,h,hpp,cxx,hxx,cc,hh}]
+indent_style = space
+indent_size = 4
+# Use 4 spaces for indentation
+# Braces on new line for functions/classes, same line for control statements
+# (Cannot enforce brace style directly, but document for reference)
+
+# Naming conventions (documented for reference)
+# - types: lower_case
+# - functions: lower_case
+# - variables: lower_case
+# - constants: UPPER_CASE
+# - private members: m_lower_case
+
+# C++ specific settings
+cpp_space_before_function_paren = false
+cpp_brace_style = allman
+cpp_align_consecutive_assignments = true
+cpp_align_consecutive_declarations = true
+cpp_sort_includes = true
+cpp_include_block_style = preserve
+
+# Visual Studio specific
+[*.vcxproj]
+indent_style = space
+indent_size = 2
+
+# Exclude generated files
+[*.Designer.*]
+insert_final_newline = false
+trim_trailing_whitespace = false
+
+# End of file
