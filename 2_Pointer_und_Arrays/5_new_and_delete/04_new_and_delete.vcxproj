@@ -19,7 +19,7 @@
     <ProjectGuid>{4B389F88-A2FA-48B6-91E5-5763F127185B}</ProjectGuid>
     <RootNamespace>ConsoleApplication1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>5_new_and_delete</ProjectName>
+    <ProjectName>5_new_and_delete (heap)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
