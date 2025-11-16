@@ -10,7 +10,7 @@ AppleLadegeraet::AppleLadegeraet()
 int AppleLadegeraet::liefereStromViaLightning()
 {
 	int strom = 1000;
-	std::cout << "AppleLadegeraet liefert strom: "<< strom << std::endl;
+	std::cout << "AppleLadegeraet liefert strom via Lightning: "<< strom << std::endl;
 
 	return strom;
 }
