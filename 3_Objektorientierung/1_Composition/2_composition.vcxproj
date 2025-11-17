@@ -136,6 +136,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="WichtigeVokabeln.md">
+      <SubType>
+      </SubType>
+    </None>
     <None Include="_ReadMe\ClassDiagram.ump" />
     <None Include="_ReadMe\ClassDiagramm.puml" />
   </ItemGroup>
