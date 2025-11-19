@@ -26,7 +26,7 @@ void vector_example()
 	// Vorteil: random access (operator[]) 
 	std::cout << my_vector[0] << std::endl;
 
-	// Vorteil: in der größe veränderlich, wenn auch ineffizient
+	// Vorteil: in der grÃ¶ÃŸe verÃ¤nderlich, wenn auch ineffizient
 	my_vector.push_back(5);
 
 	// Ein iterator ist die Abstraktion eines Pointers
@@ -34,18 +34,18 @@ void vector_example()
 	std::vector<int>::iterator it = my_vector.begin(); // innere Klasse von vector
 
 	// Variante 1: while Schleife
-	while (it < my_vector.end())
+	while (it != my_vector.end())
 	{
 		std::cout << *it << std::endl;	// iterator dereferenzieren
 		++it;							// iterator inkrementieren
 	}
 
 	// Variante 2 (besser): for schleife
-	for (auto it = my_vector.begin(); it < my_vector.end(); ++it)
+	for (auto it = my_vector.begin(); it != my_vector.end(); ++it)
 		std::cout << *it << std::endl;
 
 	// Variante 3 (am Besten): for_each schleife
-	for (int item : my_vector)
+	for (int & item : my_vector)
 	{
 		std::cout << item << std::endl;
 	}
@@ -61,7 +61,7 @@ void map_example()
 
 	my_map["drei"] = "three";
 
-	for (auto item : my_map)
+	for (auto& item : my_map)
 	{
 		std::cout << item.first << ":" << item.second << std::endl;
 	}
