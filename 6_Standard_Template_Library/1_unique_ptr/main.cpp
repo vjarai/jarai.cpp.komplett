@@ -1,15 +1,16 @@
-﻿#include <iostream>
+#include <iostream>
+#include <memory>
+
 #include "FooBar.h"
 
-using namespace std;
 
 int main()
 {
-	cout << "Starting Application..." << endl;
+	std::cout << "Starting Application..." << std::endl;
 
 	{
 		// allocate FooBar memory (new)
-		auto my_ptr = make_unique<FooBar>();
+		 auto my_ptr = std::make_unique<FooBar>();
 
 		// shorthand for
 		// unique_ptr<FooBar> my_ptr(new FooBar());
@@ -26,6 +27,6 @@ int main()
 
 	}	// ~unique_ptr destructor frees FooBar's memory (delete)
 
-	cout << "Terminating Application..." << endl;
+	std::cout << "Terminating Application..." << std::endl;
 
 } 
