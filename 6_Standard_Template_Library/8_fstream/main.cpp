@@ -33,8 +33,17 @@ int main()
 	double value = 100;
 	std::string filename{ "c:\\temp\\test.dat" };
 
-	write_file(filename, value);
+    try
+    {
+        write_file(filename, value);
 
-	value = 0;
-	read_file(filename, value);
+        value = 0;
+
+        read_file(filename, value);
+    }
+    catch (const std::exception& e)
+    {
+        std::cerr << "Fehler: " << e.what() << std::endl;
+    }
+
 }

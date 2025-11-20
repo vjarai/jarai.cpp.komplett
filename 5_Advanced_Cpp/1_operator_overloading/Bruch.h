@@ -8,23 +8,23 @@ class Bruch
 {
 public:
 
-	// Variante1: Operatoren können Memberfunktionen mit einem Parameter sein
+	// Variante1: Operatoren kÃ¶nnen Memberfunktionen mit einem Parameter sein
 	Bruch operator -(const Bruch& rhs) const;
 	Bruch operator +(const Bruch& rhs) const;
 	//Bruch operator *(const Bruch& rhs) const;
 	//Bruch operator /(const Bruch& rhs) const;
 
-	// Variante2: Operatoren können friend Funktionen mit zwei Parametern sein
+	// Variante2: Operatoren kÃ¶nnen friend Funktionen mit zwei Parametern sein
 	friend Bruch operator *(const Bruch& lhs, const Bruch& rhs);
 	friend Bruch operator /(const Bruch& lhs, const Bruch& rhs);
 
 	// Ein-/Ausgabeoperatoren werden immer als friend declariert,
-	// da die Klassen Istream und ostream nicht geändert werden können
+	// da die Klassen Istream und ostream nicht geÃ¤ndert werden kÃ¶nnen
 	friend ostream& operator<<(ostream& os, const Bruch& rhs);
 	friend istream& operator>>(istream& is, Bruch& rhs);
 
 	// Konvertierungsoperator int => Bruch
-	/*explicit*/ Bruch(int zaehler = 0, int nenner = 1);
+    /*explicit*/ Bruch(int zaehler = 0, int nenner = 1);  // default werte fÃ¼r parameter
 
 	// Konvertierungsoperator Bruch => double
 	explicit operator double() const;
