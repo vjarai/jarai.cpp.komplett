@@ -38,11 +38,15 @@ int main()
 {
 	Functor my_functor;
 
-    int x;
+    int x = 100;
 
     // https://www.learncpp.com/cpp-tutorial/lambda-captures/
+    // [x]  // capture x by value
+    // [&x] // capture x by reference
+    // [=]  // capture all variables by value
+    // [&]  // capture all variables by reference
 
-	auto lambda = [](int count)
+	auto lambda = [&](int count)
 	{
 		for (int i = 0; i < count; i++)
 		{
