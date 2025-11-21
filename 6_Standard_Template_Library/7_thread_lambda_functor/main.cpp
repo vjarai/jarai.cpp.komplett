@@ -38,7 +38,9 @@ int main()
 {
 	Functor my_functor;
 
-    int x = 100;
+    // Wenn auf eine Variable gleichzeitig in mehreren Threads zugegriffen wird, 
+    // sollte diese als volatile deklariert werden, um Compiler-Optimierungen zu verhindern.
+    volatile int x = 100;
 
     // https://www.learncpp.com/cpp-tutorial/lambda-captures/
     // [x]  // capture x by value
