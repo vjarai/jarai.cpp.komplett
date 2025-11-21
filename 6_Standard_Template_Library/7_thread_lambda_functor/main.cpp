@@ -6,7 +6,7 @@
 using namespace std::chrono_literals;
 
 class Functor // Functor ist eine Klasse die wie eine Funktion aufgerufen werden kann
-	// aber zus‰tzlich einen Zustand (Member-Variable) speichern kann
+	// aber zus√§tzlich einen Zustand (Member-Variable) speichern kann
 {
 
 public:
@@ -38,11 +38,15 @@ int main()
 {
 	Functor my_functor;
 
+    int x;
+
+    // https://www.learncpp.com/cpp-tutorial/lambda-captures/
+
 	auto lambda = [](int count)
 	{
 		for (int i = 0; i < count; i++)
 		{
-			std::cout << "Thread 3: " << i << std::endl;
+			std::cout << "Thread 3: " << i << x << std::endl;
 			std::this_thread::sleep_for(30ms);
 		}
 	};
