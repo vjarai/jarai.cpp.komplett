@@ -110,32 +110,7 @@ const BankAccount& getAccountWithHigherBalance(const BankAccount& acc1, const Ba
     return (acc1.getBalance() > acc2.getBalance()) ? acc1 : acc2;
 }
 
-// Example of const correctness with raw pointers
-void pointerExample()
-{
-    std::cout << "\n=== Pointer Const Examples ===" << std::endl;
 
-    int value1 = 100;
-    int value2 = 200;
-
-    // Pointer to const - can change pointer, cannot change value
-    const int* ptrToConst = &value1;
-    std::cout << "Pointer to const: " << *ptrToConst << std::endl;
-    ptrToConst = &value2; // OK: can change pointer
-    // *ptrToConst = 300; // ERROR: cannot change value through pointer
-
-    // Const pointer - cannot change pointer, can change value
-    int* const constPtr = &value1;
-    *constPtr = 150; // OK: can change value
-    // constPtr = &value2; // ERROR: cannot change pointer
-
-    // Const pointer to const - cannot change either
-    const int* const constPtrToConst = &value1;
-    // *constPtrToConst = 300; // ERROR: cannot change value
-    // constPtrToConst = &value2; // ERROR: cannot change pointer
-
-    std::cout << "Modified value1: " << value1 << std::endl;
-}
 
 int main()
 {
@@ -164,8 +139,6 @@ int main()
     const BankAccount& richer = getAccountWithHigherBalance(account1, account2);
     std::cout << "\nAccount with higher balance belongs to: " << richer.getOwner() << std::endl;
 
-    // Pointer examples
-    pointerExample();
 
     std::cout << "\n=== Key Takeaways ===" << std::endl;
     std::cout << "1. Mark member functions as const if they don't modify state" << std::endl;

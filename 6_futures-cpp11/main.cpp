@@ -70,24 +70,32 @@ Egg FryEggs(int howMany) {
 }
 
 int main() {
+
     Coffee cup = PourCoffee();
+
+    // Synchrones Frühstück zubereiten
+    //Egg egg = FryEggs(2);
+    //Bacon bacon = FryBacon(3);
+    //Toast toast = MakeToastWithButterAndJam(2);
+
     std::cout << "coffee is ready" << std::endl;
 
+    // Asynchrones Frühstück zubereiten
     auto eggsFuture = std::async(std::launch::async, FryEggs, 2);
     auto baconFuture = std::async(std::launch::async, FryBacon, 3);
     auto toastFuture = std::async(std::launch::async, MakeToastWithButterAndJam, 2);
 
     auto egg = eggsFuture.get();
-	auto bacon = baconFuture.get();
-	auto toast = toastFuture.get();
+    auto bacon = baconFuture.get();
+    auto toast = toastFuture.get();
 
-	std::cout << "eggs are ready" << std::endl;
-	std::cout << "bacon is ready" << std::endl;
-	std::cout << "toast is ready" << std::endl;
+    std::cout << "eggs are ready" << std::endl;
+    std::cout << "bacon is ready" << std::endl;
+    std::cout << "toast is ready" << std::endl;
 
-	std::cout << "Pouring orange juice" << std::endl;
-	std::this_thread::sleep_for(std::chrono::seconds(3));
-	Juice oj = PourJuice();
+    std::cout << "Pouring orange juice" << std::endl;
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    Juice oj = PourJuice();
     std::cout << "oj is ready" << std::endl;
     std::cout << "Breakfast is ready!" << std::endl;
 
